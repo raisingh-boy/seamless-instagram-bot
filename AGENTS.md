@@ -230,10 +230,32 @@ VALUES ('instagram', '...', '...', '...', '{}'::jsonb);
 2. Прочитай последние agent_events
 3. Запиши старт в agent_events
 
-## 📝 Write-Through Protocol (обязательно)
-Каждое решение/действие → 3 хранилища:
-1. **🧠 Remembra** — `python3 write_through.py <agent> <type> "<text>"`
-2. **🐘 agent_events** — автоматически через Events API (:8094)
-3. **📄 MEMORY.md + memory/** — автоматически
-
 Типы: architecture | decision | event | solution | plan | implementation
+
+## 🚫 STOP HOOK — обязательно перед завершением задачи
+
+Ты НЕ МОЖЕШЬ завершить задачу / сказать "готово" / переключиться на другое, пока:
+
+### 1. Write-Through Protocol
+Каждое решение, архитектурное изменение, план, реализация → 3 хранилища:
+```
+python3 write_through.py <agent> <type> "<текст>"
+```
+Типы: architecture | decision | event | solution | plan | implementation
+
+### 2. Verification Artifact (доказательство)
+Перед "готово" ты обязан предоставить:
+- Что изменилось (файлы, строки)
+- Что запускал (exec, auditor)
+- Что записал в agent_events
+- Что закоммитил в git
+
+### 3. Запрещённые фразы
+"Должно работать", "наверное", "вроде работает", "я уверен" — БЕЗ доказательств.
+Только: "Запустил → получил результат → вот доказательство"
+
+### 4. Guardian проверяет
+Если ты сказал "готово" без Write-Through записи — Guardian увидит и алертнет.
+
+### 5. Если не можешь выполнить
+Не говори "готово". Скажи "STUCK: [причина]".
