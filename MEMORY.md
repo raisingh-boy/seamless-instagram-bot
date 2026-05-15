@@ -19,3 +19,6 @@
 
 ## Решения
 - 2026-05-15: Инициализирована структура памяти
+
+## 2026-05-15T06:56:10.685183 — ARCHITECTURE
+Test: Write-Through Protocol initialized for instagram — 3-store memory

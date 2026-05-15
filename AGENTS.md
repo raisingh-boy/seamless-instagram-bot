@@ -229,3 +229,11 @@ VALUES ('instagram', '...', '...', '...', '{}'::jsonb);
 1. Прочитай AGENTS_ARCHITECTURE.md
 2. Прочитай последние agent_events
 3. Запиши старт в agent_events
+
+## 📝 Write-Through Protocol (обязательно)
+Каждое решение/действие → 3 хранилища:
+1. **🧠 Remembra** — `python3 write_through.py <agent> <type> "<text>"`
+2. **🐘 agent_events** — автоматически через Events API (:8094)
+3. **📄 MEMORY.md + memory/** — автоматически
+
+Типы: architecture | decision | event | solution | plan | implementation

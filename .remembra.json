@@ -1,5 +1,7 @@
 {
-    "api_key": "rem_RZGGb6Nk8B6YdtQB0Pv6Z3lqLEBrOD5RAxqDNqz8mYQ",
-    "endpoint": "http://127.0.0.1:8787",
-    "enabled": true
+  "api_url": "http://localhost:8787",
+  "space_id": "space_f77079ca37a743ee",
+  "keys": {
+    "instagram": "rem_RZGGbyVzzRzpFYPURvYUznxdzPfYdAaUEouNvHeTyfE"
+  }
 }
