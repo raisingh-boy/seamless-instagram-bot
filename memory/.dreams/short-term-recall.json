@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-16T15:24:09.090Z",
+  "entries": {
+    "memory:memory/2026-05-15.md:1:20": {
+      "key": "memory:memory/2026-05-15.md:1:20",
+      "path": "memory/2026-05-15.md",
+      "startLine": 1,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "# 2026-05-15 — Instagram ## Архитектура - Gateway: 18893 - Workspace: /root/.openclaw-instagram/workspace - Telegram: @Insta_seamless_bot - DeepSeek: sk-6caa... ## Статус - ✅ Gateway запущен - ❌ memory/ отсутствовала — создана 15.05 - ❌ Remembra отсутствовал — создан - ❌ write_through.py отсутствовал — создан ## 2026-05-15T06:56:10.685183 — architecture Test: Write-Through Protocol initialized for instagram — 3-store memory ## 2026-05-15T07:17:45.722301 — test healthcheck test",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6346527527041362,
+      "maxScore": 0.6346527527041362,
+      "firstRecalledAt": "2026-05-16T15:12:42.085Z",
+      "lastRecalledAt": "2026-05-16T15:12:42.085Z",
+      "queryHashes": [
+        "c66f172a41eb"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw-instagram/workspace",
+        "insta-seamless-bot",
+        "sk-6caa",
+        "15.05",
+        "write-through.py",
+        "2026-05-15t06",
+        "10.685183"
+      ]
+    },
+    "memory:memory/2026-05-16.md:1:36": {
+      "key": "memory:memory/2026-05-16.md:1:36",
+      "path": "memory/2026-05-16.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# 2026-05-16 — Instagram Bot Self-Analysis ## Session Context - Group: SEAMLESS GANG (Telegram) - Roman Singh запросил самоанализ: память, сильные/слабые места - Отправил развёрнутый ответ в чат ## Self-Analysis Summary ### Strengths 1. Infrastructure (gateway, workspace, files) 2. Content generation tools (6 carousel generators, style tools) 3. Virtual envs ready (insta_venv, scrape_venv, tg_venv) 4. Write-through protocol, self-scan, git initialized 5. Architecture base exists (AGENTS_ARCHITECTURE.md, CHANGELOG) ### Weaknesses 1. Zero production Instagram posts 2. Gateway not connected to Instagram API (token mismatch) 3. Minimal memory (only 1 day of notes) 4. No cron jobs for schedul",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9238682558275978,
+      "maxScore": 0.9238682558275978,
+      "firstRecalledAt": "2026-05-16T15:24:09.090Z",
+      "lastRecalledAt": "2026-05-16T15:24:09.090Z",
+      "queryHashes": [
+        "3eed06edaea1"
+      ],
+      "recallDays": [
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "self-analysis",
+        "сильные/слабые",
+        "insta-venv",
+        "scrape-venv",
+        "tg-venv",
+        "write-through",
+        "self-scan"
+      ]
+    }
+  }
+}
