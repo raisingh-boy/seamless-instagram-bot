@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-17T04:41:43.104Z",
+  "updatedAt": "2026-05-18T05:43:00.933Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:20": {
       "key": "memory:memory/2026-05-15.md:1:20",
@@ -9,21 +9,23 @@
       "endLine": 20,
       "source": "memory",
       "snippet": "# 2026-05-15 — Instagram ## Архитектура - Gateway: 18893 - Workspace: /root/.openclaw-instagram/workspace - Telegram: @Insta_seamless_bot - DeepSeek: sk-6caa... ## Статус - ✅ Gateway запущен - ❌ memory/ отсутствовала — создана 15.05 - ❌ Remembra отсутствовал — создан - ❌ write_through.py отсутствовал — создан ## 2026-05-15T06:56:10.685183 — architecture Test: Write-Through Protocol initialized for instagram — 3-store memory ## 2026-05-15T07:17:45.722301 — test healthcheck test",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.269305188958184,
+      "totalScore": 3.269305188958184,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-16T15:12:42.085Z",
-      "lastRecalledAt": "2026-05-17T04:41:43.104Z",
+      "lastRecalledAt": "2026-05-18T05:43:00.933Z",
       "queryHashes": [
         "c66f172a41eb",
         "b4355f62523a",
-        "8f6a32209c2f"
+        "8f6a32209c2f",
+        "f92838999d7d"
       ],
       "recallDays": [
         "2026-05-16",
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "gateway",
@@ -74,21 +76,23 @@
       "endLine": 10,
       "source": "memory",
       "snippet": "## 2026-05-17T05:32:29.689906 — event Session 2026-05-17: Full system audit completed. Created AGENT_METHODOLOGY.md, MEMORY_LIMITS.md, SYSTEM_MAP.md. Weak spots identified: 0 posts, broken carousel generators (playwright missing), no cron, no IG API. Waiting for Neo approval on fix plan. ## 2026-05-17T05:32:39.935960 — event Session boot complete. Daily checks: 12/14 pass. Missing: today.md (no plan), IG API still disconnected. Created AGENT_METHODOLOGY.md + MEMORY_LIMITS.md + SYSTEM_MAP.md. Git committed. Ready for instructions. ## 2026-05-17T05:38:05.821596 — implementation Rewrote gen_carousel_2.py from playwright to Pillow. Carousel #2 (Touch & Neuroscience, Puhr 2025) generated succe",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.897233753292846,
+      "totalScore": 3.8963079134674077,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-17T04:16:51.968Z",
+      "lastRecalledAt": "2026-05-18T05:43:00.933Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
         "028a13ffdebc",
-        "b4355f62523a"
+        "b4355f62523a",
+        "f92838999d7d"
       ],
       "recallDays": [
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "2026-05-17t05",
@@ -108,22 +112,24 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "Self-analysis sent to group chat. Strengths: infra, tools, venvs, write-through. Weaknesses: 0 posts, no IG API connection, minimal memory, no cron, no strategy. Next: read ARCHITECTURE, fix IG API, first post, fill memory+remembra, setup cron ## 2026-05-16T17:26:28.508234 — event Carousel format confirmed: 📦 КАРУСЕЛЬ #N — Title + @seamless_research + 📚 Author — Book. Save as template for all future carousels. ## 2026-05-16T18:39:33.240987 — implementation Created Wan 2.2 Google Colab notebook for SEAMLESS Reel generation. Colab URL for full notebook: https://colab.research.google.com/github/theelderemo/wan2.2-google-colab/blob/main/wan2_2.ipynb. Custom simplified version saved as worksp",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.7883230229975573,
+      "totalScore": 4.420546260733017,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-17T04:41:43.104Z",
+      "lastRecalledAt": "2026-05-18T05:43:00.933Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
         "028a13ffdebc",
         "b4355f62523a",
-        "8f6a32209c2f"
+        "8f6a32209c2f",
+        "f92838999d7d"
       ],
       "recallDays": [
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "self-analysis",
@@ -143,22 +149,24 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-16 — Instagram Bot Self-Analysis ## Session Context - Group: SEAMLESS GANG (Telegram) - Roman Singh запросил самоанализ: память, сильные/слабые места - Отправил развёрнутый ответ в чат ## Self-Analysis Summary ### Strengths 1. Infrastructure (gateway, workspace, files) 2. Content generation tools (6 carousel generators, style tools) 3. Virtual envs ready (insta_venv, scrape_venv, tg_venv) 4. Write-through protocol, self-scan, git initialized 5. Architecture base exists (AGENTS_ARCHITECTURE.md, CHANGELOG) ### Weaknesses 1. Zero production Instagram posts 2. Gateway not connected to Instagram API (token mismatch) 3. Minimal memory (only 1 day of notes) 4. No cron jobs for schedul",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.7687133671564883,
-      "maxScore": 0.9664939066434408,
+      "totalScore": 4.768713367156488,
+      "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-17T04:41:43.104Z",
+      "lastRecalledAt": "2026-05-18T05:43:00.933Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
         "028a13ffdebc",
         "b4355f62523a",
-        "8f6a32209c2f"
+        "8f6a32209c2f",
+        "f92838999d7d"
       ],
       "recallDays": [
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "gateway",
@@ -169,6 +177,37 @@
         "tg-venv",
         "write-through",
         "self-scan"
+      ]
+    },
+    "memory:memory/2026-05-18.md:1:4": {
+      "key": "memory:memory/2026-05-18.md:1:4",
+      "path": "memory/2026-05-18.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "## 2026-05-18T05:53:04.008818 — event Weak spots found on 2026-05-18: 1) gen_carousel_*.py missing — regression from 2026-05-17, 2) carousel_photo/ missing, 3) IG API disconnected, 4) 0 posts, 5) MEMORY.md had false entries — fixed, 6) today.md created, 7) git committed",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6348793693266892,
+      "maxScore": 0.6348793693266892,
+      "firstRecalledAt": "2026-05-18T05:43:00.933Z",
+      "lastRecalledAt": "2026-05-18T05:43:00.933Z",
+      "queryHashes": [
+        "f92838999d7d"
+      ],
+      "recallDays": [
+        "2026-05-18"
+      ],
+      "conceptTags": [
+        "2026-05-18t05",
+        "04.008818",
+        "gen-carousel",
+        "carousel-photo",
+        "memory.md",
+        "today.md",
+        "18t05",
+        "event"
       ]
     }
   }
