@@ -10,3 +10,6 @@ Tried rewriting gen_carousel_2.py from playwright to Pillow. **Files not found/n
 - **Critical:** IG API not connected — 0 posts published since creation.
 - **Action:** Need complete carousel generator rebuild + IG API setup.
 - **Git:** Cleaned up, committed with today's audit.
+
+## 2026-05-18T05:53:04.008818 — EVENT
+Weak spots found on 2026-05-18: 1) gen_carousel_*.py missing — regression from 2026-05-17, 2) carousel_photo/ missing, 3) IG API disconnected, 4) 0 posts, 5) MEMORY.md had false entries — fixed, 6) today.md created, 7) git committed
