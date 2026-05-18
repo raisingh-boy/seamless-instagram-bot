@@ -1,36 +1,12 @@
-# MEMORY.md — Instagram Agent
+## 2026-05-17T05:32 — AUDIT
+Full system audit. Created AGENT_METHODOLOGY.md, MEMORY_LIMITS.md, SYSTEM_MAP.md.
+Weak spots: 0 posts, no IG API connection, broken generators.
 
-## ID
-- instagram-bot
+## 2026-05-17T05:38 — ATTEMPTED FIX
+Tried rewriting gen_carousel_2.py from playwright to Pillow. **Files not found/not committed** — confirmed missing 2026-05-18.
 
-## Роль
-Публикация контента в Instagram для SEAMLESS | Bali Movement Education
-
-## Gateway
-- 18893
-- HOME: /root/.openclaw-instagram/
-- Workspace: /root/.openclaw-instagram/workspace
-
-## Telegram
-- @Insta_seamless_bot
-
-## DeepSeek
-- sk-6caa...
-
-## Решения
-- 2026-05-15: Инициализирована структура памяти
-
-## 2026-05-15T06:56:10.685183 — ARCHITECTURE
-Test: Write-Through Protocol initialized for instagram — 3-store memory
-
-## 2026-05-15T07:17:45.722301 — TEST
-healthcheck test
-
-## 2026-05-16T17:13:13.936469 — EVENT
-Self-analysis sent to group chat. Strengths: infra, tools, venvs, write-through. Weaknesses: 0 posts, no IG API connection, minimal memory, no cron, no strategy. Next: read ARCHITECTURE, fix IG API, first post, fill memory+remembra, setup cron
-
-## 2026-05-16T17:26:28.508234 — EVENT
-Carousel format confirmed: 📦 КАРУСЕЛЬ #N — Title + @seamless_research + 📚 Author — Book. Save as template for all future carousels.
-
-## 2026-05-16T18:39:33.240987 — IMPLEMENTATION
-Created Wan 2.2 Google Colab notebook for SEAMLESS Reel generation. Colab URL for full notebook: https://colab.research.google.com/github/theelderemo/wan2.2-google-colab/blob/main/wan2_2.ipynb. Custom simplified version saved as workspace/colab_wan22_reel.ipynb. Sent to Roman via Telegram.
+## 2026-05-18T05:52 — WEAK SPOT AUDIT
+- **Critical:** All gen_carousel_*.py files GONE. carousel_photo/ GONE.
+- **Critical:** IG API not connected — 0 posts published since creation.
+- **Action:** Need complete carousel generator rebuild + IG API setup.
+- **Git:** Cleaned up, committed with today's audit.
