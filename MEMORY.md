@@ -14,5 +14,20 @@ Tried rewriting gen_carousel_2.py from playwright to Pillow. **Files not found/n
 ## 2026-05-18T05:53:04.008818 — EVENT
 Weak spots found on 2026-05-18: 1) gen_carousel_*.py missing — regression from 2026-05-17, 2) carousel_photo/ missing, 3) IG API disconnected, 4) 0 posts, 5) MEMORY.md had false entries — fixed, 6) today.md created, 7) git committed
 
-## 2026-05-18T07:45:28.029966 — IMPLEMENTATION
-Созданы Carousel #6 (Dance as Medicine) и Carousel #7 (Your Body Knows First). Сгенерированы gen_carousel_6.py и gen_carousel_7.py на Pillow. Все 14 слайдов (7+7) успешно отрендерены в carousel_photo/. Написаны 2 чистых поста post_carousel_6.md и post_carousel_7.md — без HTML тегов, без таймингов, готовы к публикации.
+## 2026-05-18T07:45 — IMPLEMENTATION
+Созданы Carousel #6 (Dance as Medicine) и Carousel #7 (Your Body Knows First).
+- Показывать фото Roman на утверждение перед генерацией!
+- Посты содержат строку: Ph: @andrey_berezkin
+- Все gen_carousel_*.py (2-7) живут в /root/.openclaw-instagram/ (не workspace/)
+- carousel_photo/ там же
+
+## WORKFLOW — Как Работаем
+1. Roman даёт тему → research
+2. Показать фото на утверждение
+3. Сгенерировать карусели (Pillow, 7 слайдов, 1080×1350)
+4. Пост: чистый текст, без HTML, без таймингов
+5. Добавить Ph: @andrey_berezkin
+6. Отправить слайды + текст в Telegram
+
+## 2026-05-18T08:09:07.210787 — DECISION
+WORKFLOW записан: 1) Roman даёт тему 2) Показываю фото на утверждение 3) Генерация карусели 4) Пост без HTML 5) Ph: @andrey_berezkin 6) Отправка в Telegram. Фото обновлены на утверждённые (7O0A4626.jpg и 7O0A5442.jpg). Посты обновлены.

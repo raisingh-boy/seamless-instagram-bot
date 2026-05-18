@@ -25,5 +25,6 @@ Your Body Knows First — Interoception & Embodied Wisdom
 📚 Источник: Embodied Mindfulness Through Movement — Scoping Review, Healthcare MDPI 2025; Puhr, Waterink & van Hooren 2025
 
 @seamless_research
+Ph: @andrey_berezkin
 
 #interoception #embodiedcognition #somatic #bodyawareness #contactimprovisation #neuroscience #mindfulness #seamlessresearch #bali
