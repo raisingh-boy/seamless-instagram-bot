@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-19T04:41:16.221Z",
+  "updatedAt": "2026-05-19T10:38:48.316Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:20": {
       "key": "memory:memory/2026-05-15.md:1:20",
@@ -285,6 +285,37 @@
         "today.md",
         "2026-05-18t07",
         "28.029966"
+      ]
+    },
+    "memory:memory/2026-05-19.md:20:42": {
+      "key": "memory:memory/2026-05-19.md:20:42",
+      "path": "memory/2026-05-19.md",
+      "startLine": 20,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "- Got full text from @nikita_antsukhsky's posts (response reaction, Bernstein references, gravity) - Method: curl each post URL individually, parse og:description from meta tags - Rate limits exist but one successful fetch per URL works ## Nikita Antsukhsky (@nikita_antsukhsky) — Full Analysis - Преподаватель сальсы/бачаты из СПб, ~4.5K followers - **Основная концепция:** \"Ответная реакция\" (response reaction) — вместо push/pull в партнёрке создавать ответную реакцию в конкретных частях тела (лопатка, локоть) - **Аналогия:** танец = диалог (погода vs по душам) - **Ссылается на Н. Бернштейна** — советский нейрофизиолог движения - **Формат его каруселей:** 1) Hook-личная история → 2) Вызов/эк",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-19T10:38:48.316Z",
+      "lastRecalledAt": "2026-05-19T10:38:48.316Z",
+      "queryHashes": [
+        "aa39e972189f"
+      ],
+      "recallDays": [
+        "2026-05-19"
+      ],
+      "conceptTags": [
+        "nikita-antsukhsky",
+        "сальсы/бачаты",
+        "4.5k",
+        "push/pull",
+        "hook-личная",
+        "вызов/эк",
+        "got",
+        "full"
       ]
     }
   }
