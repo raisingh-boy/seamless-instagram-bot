@@ -1,28 +1,28 @@
-📦 КАРУСЕЛЬ #7
+📦 CAROUSEL #7
 
 Your Body Knows First — Interoception & Embodied Wisdom
 
-У тебя есть шестое чувство. И ты им почти не пользуешься.
+You have a sixth sense. And you barely use it.
 
-Интероцепция — это способность чувствовать своё тело изнутри. Сердцебиение. Дыхание. Напряжение. Тот самый "ком в горле" или "бабочки в животе".
+Interoception is the ability to feel your body from within. Heartbeat. Breath. Tension. That "knot in your throat" or "butterflies in your stomach."
 
-Нейронаука называет это интероцепцией. Она активирует островковую долю мозга — область, которая связывает состояние тела с сознанием.
+Neuroscience calls it interoception. It activates the insula — the brain region that links body state to conscious awareness.
 
-Высокая интероцептивная осознанность = лучшая эмоциональная регуляция, ясные решения и сильное чувство себя.
+High interoceptive awareness = better emotional regulation, clearer decisions, a stronger sense of self.
 
-Низкая интероцепция = тревога, выгорание, потеря связи с собой.
+Low interoception = anxiety, burnout, disconnection from yourself.
 
-Современная жизнь учит нас игнорировать тело. Экраны. Десклайн. Дедлайны. Голова важнее тела. Мы перестали чувствовать голод, усталость, стресс — мы просто продавливаем.
+Modern life trains us to ignore the body. Screens. Desks. Deadlines. Head over body. We stopped feeling hunger, fatigue, stress — we just push through.
 
-Контактная импровизация восстанавливает этот канал. Чтобы танцевать CI, ты должен:
-— чувствовать вес партнёра
-— ощущать своё выравнивание
-— отслеживать баланс в реальном времени
-— отвечать до того, как подумал
+Contact Improvisation restores this channel. To dance CI you must:
+— feel your partner's weight
+— sense your alignment
+— track balance in real time
+— respond before you think
 
-Это не мистика. Это тренировка интероцепции через движение.
+This is not mysticism. This is interoception training through movement.
 
-📚 Источник: Embodied Mindfulness Through Movement — Scoping Review, Healthcare MDPI 2025; Puhr, Waterink & van Hooren 2025
+📚 Sources: Embodied Mindfulness Through Movement — Scoping Review, Healthcare MDPI 2025; Puhr, Waterink & van Hooren 2025
 
 @seamless_research
 Ph: @andrey_berezkin

@@ -1,23 +1,23 @@
-📦 КАРУСЕЛЬ #6
+📦 CAROUSEL #6
 
 Dance is Medicine — How Movement Heals
 
-Больше не надо выбирать между телом и разумом. Наука 2025 года подтверждает то, что танцоры знали всегда: движение лечит.
+You no longer have to choose between body and mind. The 2025 science confirms what dancers have always known: movement heals.
 
-Обзор 62 исследований (Taylor & Francis, 2025) показал, что танец снижает тревогу, депрессию, улучшает эмоциональную регуляцию и чувство собственного достоинства. И это работает в любом возрасте — от младенцев до пожилых.
+A scoping review of 62 studies (Taylor & Francis, 2025) found that dance reduces anxiety, depression, improves emotional regulation and self-esteem. It works across all ages — from infants to the elderly.
 
-Но не любой танец. Контактная импровизация (CI) — это не просто движение. Это телесно-ориентированная практика, где:
-— движение = нейронные паттерны
-— физическое выражение = эмоциональный сброс
-— синхронизация в паре = социальная связь
+But not just any dance. Contact Improvisation (CI) is not simply movement. It is an embodied practice where:
+— movement = neural patterns
+— physical expression = emotional release
+— group synchrony = social bonding
 
-CI объединяет в себе йогу (тело), терапию (психика) и творчество (дух) — в одной практике.
+CI combines yoga (body), therapy (mind) and creativity (spirit) — all in one practice.
 
-Танцевально-двигательная терапия (DMT) использует движение как психотерапию. CI делает то же самое — без кабинета терапевта. Просто партнёр и пол.
+Dance/Movement Therapy (DMT) uses movement as psychotherapy. CI does the same — no therapist's office needed. Just a partner and a floor.
 
-В 2026 индустрия wellness наконец просыпается: от "no pain no gain" к восстановлению нервной системы. CI была здесь всё это время.
+In 2026, the wellness industry is finally waking up: from "no pain no gain" to nervous system restoration. CI has been here the whole time.
 
-📚 Источник: Dancing Towards Wellbeing — A Scoping Review, Taylor & Francis 2025; American Dance Therapy Association 2025
+📚 Sources: Dancing Towards Wellbeing — A Scoping Review, Taylor & Francis 2025; American Dance Therapy Association 2025
 
 @seamless_research
 Ph: @andrey_berezkin
