@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-20T13:54:57.805Z",
+  "updatedAt": "2026-05-21T02:22:48.871Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:20": {
       "key": "memory:memory/2026-05-15.md:1:20",
@@ -9,27 +9,30 @@
       "endLine": 20,
       "source": "memory",
       "snippet": "# 2026-05-15 — Instagram ## Архитектура - Gateway: 18893 - Workspace: /root/.openclaw-instagram/workspace - Telegram: @Insta_seamless_bot - DeepSeek: sk-6caa... ## Статус - ✅ Gateway запущен - ❌ memory/ отсутствовала — создана 15.05 - ❌ Remembra отсутствовал — создан - ❌ write_through.py отсутствовал — создан ## 2026-05-15T06:56:10.685183 — architecture Test: Write-Through Protocol initialized for instagram — 3-store memory ## 2026-05-15T07:17:45.722301 — test healthcheck test",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.538611136748925,
+      "totalScore": 5.80791708163555,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-16T15:12:42.085Z",
-      "lastRecalledAt": "2026-05-20T13:54:57.805Z",
+      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
       "queryHashes": [
         "c66f172a41eb",
         "b4355f62523a",
         "8f6a32209c2f",
         "f92838999d7d",
         "d7ed44e437a9",
-        "99c0db57e702"
+        "99c0db57e702",
+        "72d9f2f9bebf",
+        "0e6739b7aae9"
       ],
       "recallDays": [
         "2026-05-16",
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "gateway",
@@ -120,13 +123,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "Self-analysis sent to group chat. Strengths: infra, tools, venvs, write-through. Weaknesses: 0 posts, no IG API connection, minimal memory, no cron, no strategy. Next: read ARCHITECTURE, fix IG API, first post, fill memory+remembra, setup cron ## 2026-05-16T17:26:28.508234 — event Carousel format confirmed: 📦 КАРУСЕЛЬ #N — Title + @seamless_research + 📚 Author — Book. Save as template for all future carousels. ## 2026-05-16T18:39:33.240987 — implementation Created Wan 2.2 Google Colab notebook for SEAMLESS Reel generation. Colab URL for full notebook: https://colab.research.google.com/github/theelderemo/wan2.2-google-colab/blob/main/wan2_2.ipynb. Custom simplified version saved as worksp",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.052769976925234,
+      "totalScore": 10.052769976925234,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-20T13:54:57.805Z",
+      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
@@ -137,13 +140,16 @@
         "d7ed44e437a9",
         "f79704b2f519",
         "76bcedbc03cf",
-        "99c0db57e702"
+        "99c0db57e702",
+        "72d9f2f9bebf",
+        "0e6739b7aae9"
       ],
       "recallDays": [
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "self-analysis",
@@ -163,13 +169,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-16 — Instagram Bot Self-Analysis ## Session Context - Group: SEAMLESS GANG (Telegram) - Roman Singh запросил самоанализ: память, сильные/слабые места - Отправил развёрнутый ответ в чат ## Self-Analysis Summary ### Strengths 1. Infrastructure (gateway, workspace, files) 2. Content generation tools (6 carousel generators, style tools) 3. Virtual envs ready (insta_venv, scrape_venv, tg_venv) 4. Write-through protocol, self-scan, git initialized 5. Architecture base exists (AGENTS_ARCHITECTURE.md, CHANGELOG) ### Weaknesses 1. Zero production Instagram posts 2. Gateway not connected to Instagram API (token mismatch) 3. Minimal memory (only 1 day of notes) 4. No cron jobs for schedul",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.031657359547054,
+      "totalScore": 9.663129524757409,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-20T13:54:57.805Z",
+      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
@@ -180,13 +186,16 @@
         "d7ed44e437a9",
         "f79704b2f519",
         "76bcedbc03cf",
-        "99c0db57e702"
+        "99c0db57e702",
+        "72d9f2f9bebf",
+        "0e6739b7aae9"
       ],
       "recallDays": [
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "gateway",
@@ -237,22 +246,25 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- Фото: 7O0A4626.jpg (утверждено Roman) - Генератор: gen_carousel_7.py (Pillow) - 7 слайдов отрендерены ✅ - Пост: post_carousel_7.md — чистый, без HTML ## Важно - Генераторы НЕ пропали — они в /root/.openclaw-instagram/, а не в workspace/ - Все gen_carousel_*.py на месте (2-7) - carousel_photo/ на месте ## 2026-05-18T08:01 — Фидбек Roman - Фото НУЖНО сначала показывать на утверждение — не выбирать самостоятельно - Roman выбрал первую (7O0A4626.jpg) и третью (7O0A5442.jpg) — по размеру - В посты добавить строку: Ph: @andrey_berezkin - Все слайды и тексты отправлены в Telegram чат ## WORKFLOW — Как Работаем 1. Roman говорит тему → я ищу исследования/статьи 2. Показываю Roman выбор фото → он",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.895829045619947,
+      "totalScore": 4.1597144292355965,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-19T03:23:57.938Z",
-      "lastRecalledAt": "2026-05-20T13:54:57.805Z",
+      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
       "queryHashes": [
         "d7ed44e437a9",
         "6cfd59144a6b",
         "f3687f2d735b",
-        "99c0db57e702"
+        "99c0db57e702",
+        "72d9f2f9bebf",
+        "0e6739b7aae9"
       ],
       "recallDays": [
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "7o0a4626.jpg",
@@ -272,24 +284,26 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "## 2026-05-18T05:53:04.008818 — event Weak spots found on 2026-05-18: 1) gen_carousel_*.py missing — regression from 2026-05-17, 2) carousel_photo/ missing, 3) IG API disconnected, 4) 0 posts, 5) MEMORY.md had false entries — fixed, 6) today.md created, 7) git committed ## 2026-05-18T07:45:28.029966 — implementation Созданы Carousel #6 (Dance as Medicine) и Carousel #7 (Your Body Knows First). Сгенерированы gen_carousel_6.py и gen_carousel_7.py на Pillow. Все 14 слайдов (7+7) успешно отрендерены в carousel_photo/. Написаны 2 чистых поста post_carousel_6.md и post_carousel_7.md — без HTML тегов, без таймингов, готовы к публикации. ## 2026-05-18T07:42 — Telegram от Roman Запрос: найти новые",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.157525617477576,
+      "totalScore": 4.789030186633784,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-19T03:23:57.938Z",
-      "lastRecalledAt": "2026-05-20T13:54:57.805Z",
+      "lastRecalledAt": "2026-05-21T02:22:48.802Z",
       "queryHashes": [
         "d7ed44e437a9",
         "f79704b2f519",
         "6cfd59144a6b",
         "f3687f2d735b",
         "76bcedbc03cf",
-        "99c0db57e702"
+        "99c0db57e702",
+        "72d9f2f9bebf"
       ],
       "recallDays": [
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "2026-05-18t05",
@@ -340,19 +354,22 @@
       "endLine": 49,
       "source": "memory",
       "snippet": "- Posture affects mood (slouching → depression) - Proprioception = \"deep-sensibility\" via muscle spindles, Golgi tendon organs - Perfect balance impossible — constant micro-movements ## Workflow Updates - Roman wants posts in English with clean format: 📦 CAROUSEL #N + title + body + 📚 Source + @seamless_research + Ph: @andrey_rey_berezkin + 5 hashtags - Always show photos from photos_fresh/ (new ones only) - After approval → move to photos_approved/ - Generators: gen_carousel_8.py and gen_carousel_9.py committed in /root/.openclaw-instagram/ ## Write-Through Protocol All decisions archived in agent_events via write_through.py.",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2657172620121062,
+      "totalScore": 2.5314340067069385,
       "maxScore": 0.6328588896646901,
       "firstRecalledAt": "2026-05-20T04:21:11.030Z",
-      "lastRecalledAt": "2026-05-20T13:54:57.805Z",
+      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
       "queryHashes": [
         "76bcedbc03cf",
-        "99c0db57e702"
+        "99c0db57e702",
+        "72d9f2f9bebf",
+        "0e6739b7aae9"
       ],
       "recallDays": [
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-21"
       ],
       "conceptTags": [
         "deep-sensibility",
