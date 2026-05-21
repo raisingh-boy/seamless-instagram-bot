@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-21T02:37:50.208Z",
+  "updatedAt": "2026-05-21T09:16:11.930Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:20": {
       "key": "memory:memory/2026-05-15.md:1:20",
@@ -286,13 +286,13 @@
       "endLine": 30,
       "source": "memory",
       "snippet": "## 2026-05-18T05:53:04.008818 — event Weak spots found on 2026-05-18: 1) gen_carousel_*.py missing — regression from 2026-05-17, 2) carousel_photo/ missing, 3) IG API disconnected, 4) 0 posts, 5) MEMORY.md had false entries — fixed, 6) today.md created, 7) git committed ## 2026-05-18T07:45:28.029966 — implementation Созданы Carousel #6 (Dance as Medicine) и Carousel #7 (Your Body Knows First). Сгенерированы gen_carousel_6.py и gen_carousel_7.py на Pillow. Все 14 слайдов (7+7) успешно отрендерены в carousel_photo/. Написаны 2 чистых поста post_carousel_6.md и post_carousel_7.md — без HTML тегов, без таймингов, готовы к публикации. ## 2026-05-18T07:42 — Telegram от Roman Запрос: найти новые",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.789030186633784,
+      "totalScore": 5.789030186633784,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-19T03:23:57.938Z",
-      "lastRecalledAt": "2026-05-21T02:22:48.802Z",
+      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
       "queryHashes": [
         "d7ed44e437a9",
         "f79704b2f519",
@@ -300,7 +300,8 @@
         "f3687f2d735b",
         "76bcedbc03cf",
         "99c0db57e702",
-        "72d9f2f9bebf"
+        "72d9f2f9bebf",
+        "8af7517c6b43"
       ],
       "recallDays": [
         "2026-05-19",
@@ -325,18 +326,20 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "- Got full text from @nikita_antsukhsky's posts (response reaction, Bernstein references, gravity) - Method: curl each post URL individually, parse og:description from meta tags - Rate limits exist but one successful fetch per URL works ## Nikita Antsukhsky (@nikita_antsukhsky) — Full Analysis - Преподаватель сальсы/бачаты из СПб, ~4.5K followers - **Основная концепция:** \"Ответная реакция\" (response reaction) — вместо push/pull в партнёрке создавать ответную реакцию в конкретных частях тела (лопатка, локоть) - **Аналогия:** танец = диалог (погода vs по душам) - **Ссылается на Н. Бернштейна** — советский нейрофизиолог движения - **Формат его каруселей:** 1) Hook-личная история → 2) Вызов/эк",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-19T10:38:48.316Z",
-      "lastRecalledAt": "2026-05-19T10:38:48.316Z",
+      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
       "queryHashes": [
-        "aa39e972189f"
+        "aa39e972189f",
+        "8af7517c6b43"
       ],
       "recallDays": [
-        "2026-05-19"
+        "2026-05-19",
+        "2026-05-21"
       ],
       "conceptTags": [
         "nikita-antsukhsky",
@@ -356,18 +359,19 @@
       "endLine": 49,
       "source": "memory",
       "snippet": "- Posture affects mood (slouching → depression) - Proprioception = \"deep-sensibility\" via muscle spindles, Golgi tendon organs - Perfect balance impossible — constant micro-movements ## Workflow Updates - Roman wants posts in English with clean format: 📦 CAROUSEL #N + title + body + 📚 Source + @seamless_research + Ph: @andrey_rey_berezkin + 5 hashtags - Always show photos from photos_fresh/ (new ones only) - After approval → move to photos_approved/ - Generators: gen_carousel_8.py and gen_carousel_9.py committed in /root/.openclaw-instagram/ ## Write-Through Protocol All decisions archived in agent_events via write_through.py.",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.5314340067069385,
+      "totalScore": 3.1642928901248872,
       "maxScore": 0.6328588896646901,
       "firstRecalledAt": "2026-05-20T04:21:11.030Z",
-      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
+      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
       "queryHashes": [
         "76bcedbc03cf",
         "99c0db57e702",
         "72d9f2f9bebf",
-        "0e6739b7aae9"
+        "0e6739b7aae9",
+        "8af7517c6b43"
       ],
       "recallDays": [
         "2026-05-20",
@@ -391,15 +395,16 @@
       "endLine": 25,
       "source": "memory",
       "snippet": "# 2026-05-19 — Instagram Content Session ## Carousel #8 & #9 Generated ✅ Created and sent two carousels to Roman: - **Carousel #8** — \"Dance Is Your Stress Vaccine\" (Psychology of Sport & Exercise, 2025 — neurochemistry of dance: dopamine, oxytocin, β-endorphins) - **Carousel #9** — \"Somatic Movement Shapes Your Brain\" (Psychological Medicine, Cambridge 2025 — Mendelian randomization showing causal link between movement and brain structure) - Both use approved photos from media/photos_approved/ - Post format confirmed: 📦 CAROUSEL #N, clean text, Ph: @andrey_berezkin, 5 hashtags ## Photo Organization System Created ✅ Roman complained about showing same photos repeatedly. Created proper fol",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T02:37:50.208Z",
-      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
+      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
       "queryHashes": [
-        "33b0e89fdb09"
+        "33b0e89fdb09",
+        "8af7517c6b43"
       ],
       "recallDays": [
         "2026-05-21"
@@ -422,15 +427,16 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# 2026-05-20 ## Carousel #10 & #11 — In Progress Roman requested 2 carousels for today. ### Carousel #10 — \"Dancing with Gravity\" Source: Fuchs, \"Dancing with Gravity\" (Behavioral Sciences, MDPI, 2018) Full post written and sent to Roman ✅ ### Carousel #11 — \"Your Body's Hidden Sense\" Source: Frontiers in Neuroscience (2024) — interoception, insula cortex, postural zones Full post written and sent to Roman ✅ ### Status: Awaiting Photo Selection 9 fresh photos sent to Roman via Telegram. Waiting for him to pick which go on Carousel #10 and which on Carousel #11. After approval → generate slides, post text, send to Telegram. ### Photos Available (not yet used): 1. 7O0A0161 2. 7O0A0402 3.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6324113004156594,
-      "maxScore": 0.6324113004156594,
+      "totalScore": 1.6324113004156593,
+      "maxScore": 1,
       "firstRecalledAt": "2026-05-21T02:37:50.208Z",
-      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
+      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
       "queryHashes": [
-        "33b0e89fdb09"
+        "33b0e89fdb09",
+        "8af7517c6b43"
       ],
       "recallDays": [
         "2026-05-21"
