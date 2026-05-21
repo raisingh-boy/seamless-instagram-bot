@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-21T02:22:48.871Z",
+  "updatedAt": "2026-05-21T02:37:50.208Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:20": {
       "key": "memory:memory/2026-05-15.md:1:20",
@@ -123,13 +123,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "Self-analysis sent to group chat. Strengths: infra, tools, venvs, write-through. Weaknesses: 0 posts, no IG API connection, minimal memory, no cron, no strategy. Next: read ARCHITECTURE, fix IG API, first post, fill memory+remembra, setup cron ## 2026-05-16T17:26:28.508234 — event Carousel format confirmed: 📦 КАРУСЕЛЬ #N — Title + @seamless_research + 📚 Author — Book. Save as template for all future carousels. ## 2026-05-16T18:39:33.240987 — implementation Created Wan 2.2 Google Colab notebook for SEAMLESS Reel generation. Colab URL for full notebook: https://colab.research.google.com/github/theelderemo/wan2.2-google-colab/blob/main/wan2_2.ipynb. Custom simplified version saved as worksp",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.052769976925234,
+      "totalScore": 11.000544148050171,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
+      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
@@ -142,7 +142,8 @@
         "76bcedbc03cf",
         "99c0db57e702",
         "72d9f2f9bebf",
-        "0e6739b7aae9"
+        "0e6739b7aae9",
+        "33b0e89fdb09"
       ],
       "recallDays": [
         "2026-05-17",
@@ -169,13 +170,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-16 — Instagram Bot Self-Analysis ## Session Context - Group: SEAMLESS GANG (Telegram) - Roman Singh запросил самоанализ: память, сильные/слабые места - Отправил развёрнутый ответ в чат ## Self-Analysis Summary ### Strengths 1. Infrastructure (gateway, workspace, files) 2. Content generation tools (6 carousel generators, style tools) 3. Virtual envs ready (insta_venv, scrape_venv, tg_venv) 4. Write-through protocol, self-scan, git initialized 5. Architecture base exists (AGENTS_ARCHITECTURE.md, CHANGELOG) ### Weaknesses 1. Zero production Instagram posts 2. Gateway not connected to Instagram API (token mismatch) 3. Minimal memory (only 1 day of notes) 4. No cron jobs for schedul",
-      "recallCount": 12,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.663129524757409,
+      "totalScore": 10.663129524757409,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-21T02:22:48.871Z",
+      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
@@ -188,7 +189,8 @@
         "76bcedbc03cf",
         "99c0db57e702",
         "72d9f2f9bebf",
-        "0e6739b7aae9"
+        "0e6739b7aae9",
+        "33b0e89fdb09"
       ],
       "recallDays": [
         "2026-05-17",
@@ -380,6 +382,68 @@
         "photos-approved",
         "gen-carousel-8.py",
         "gen-carousel-9.py"
+      ]
+    },
+    "memory:memory/2026-05-19.md:1:25": {
+      "key": "memory:memory/2026-05-19.md:1:25",
+      "path": "memory/2026-05-19.md",
+      "startLine": 1,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "# 2026-05-19 — Instagram Content Session ## Carousel #8 & #9 Generated ✅ Created and sent two carousels to Roman: - **Carousel #8** — \"Dance Is Your Stress Vaccine\" (Psychology of Sport & Exercise, 2025 — neurochemistry of dance: dopamine, oxytocin, β-endorphins) - **Carousel #9** — \"Somatic Movement Shapes Your Brain\" (Psychological Medicine, Cambridge 2025 — Mendelian randomization showing causal link between movement and brain structure) - Both use approved photos from media/photos_approved/ - Post format confirmed: 📦 CAROUSEL #N, clean text, Ph: @andrey_berezkin, 5 hashtags ## Photo Organization System Created ✅ Roman complained about showing same photos repeatedly. Created proper fol",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-21T02:37:50.208Z",
+      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
+      "queryHashes": [
+        "33b0e89fdb09"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "β-endorphins",
+        "media/photos-approved",
+        "andrey-berezkin",
+        "instagram",
+        "content",
+        "carousel",
+        "generated",
+        "created"
+      ]
+    },
+    "memory:memory/2026-05-20.md:1:27": {
+      "key": "memory:memory/2026-05-20.md:1:27",
+      "path": "memory/2026-05-20.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "# 2026-05-20 ## Carousel #10 & #11 — In Progress Roman requested 2 carousels for today. ### Carousel #10 — \"Dancing with Gravity\" Source: Fuchs, \"Dancing with Gravity\" (Behavioral Sciences, MDPI, 2018) Full post written and sent to Roman ✅ ### Carousel #11 — \"Your Body's Hidden Sense\" Source: Frontiers in Neuroscience (2024) — interoception, insula cortex, postural zones Full post written and sent to Roman ✅ ### Status: Awaiting Photo Selection 9 fresh photos sent to Roman via Telegram. Waiting for him to pick which go on Carousel #10 and which on Carousel #11. After approval → generate slides, post text, send to Telegram. ### Photos Available (not yet used): 1. 7O0A0161 2. 7O0A0402 3.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6324113004156594,
+      "maxScore": 0.6324113004156594,
+      "firstRecalledAt": "2026-05-21T02:37:50.208Z",
+      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
+      "queryHashes": [
+        "33b0e89fdb09"
+      ],
+      "recallDays": [
+        "2026-05-21"
+      ],
+      "conceptTags": [
+        "carousel",
+        "progress",
+        "roman",
+        "requested",
+        "carousels",
+        "dancing",
+        "gravity",
+        "source"
       ]
     }
   }
