@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-21T09:16:11.930Z",
+  "updatedAt": "2026-05-23T11:30:42.188Z",
   "entries": {
     "memory:memory/2026-05-15.md:1:20": {
       "key": "memory:memory/2026-05-15.md:1:20",
@@ -83,13 +83,13 @@
       "endLine": 10,
       "source": "memory",
       "snippet": "## 2026-05-17T05:32:29.689906 — event Session 2026-05-17: Full system audit completed. Created AGENT_METHODOLOGY.md, MEMORY_LIMITS.md, SYSTEM_MAP.md. Weak spots identified: 0 posts, broken carousel generators (playwright missing), no cron, no IG API. Waiting for Neo approval on fix plan. ## 2026-05-17T05:32:39.935960 — event Session boot complete. Daily checks: 12/14 pass. Missing: today.md (no plan), IG API still disconnected. Created AGENT_METHODOLOGY.md + MEMORY_LIMITS.md + SYSTEM_MAP.md. Git committed. Ready for instructions. ## 2026-05-17T05:38:05.821596 — implementation Rewrote gen_carousel_2.py from playwright to Pillow. Carousel #2 (Touch & Neuroscience, Puhr 2025) generated succe",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.161130492831059,
+      "totalScore": 6.161130492831059,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-20T04:21:11.030Z",
+      "lastRecalledAt": "2026-05-23T11:30:42.188Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
@@ -97,13 +97,15 @@
         "b4355f62523a",
         "f92838999d7d",
         "f79704b2f519",
-        "76bcedbc03cf"
+        "76bcedbc03cf",
+        "123f96eac93a"
       ],
       "recallDays": [
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
-        "2026-05-20"
+        "2026-05-20",
+        "2026-05-23"
       ],
       "conceptTags": [
         "2026-05-17t05",
@@ -123,13 +125,13 @@
       "endLine": 42,
       "source": "memory",
       "snippet": "Self-analysis sent to group chat. Strengths: infra, tools, venvs, write-through. Weaknesses: 0 posts, no IG API connection, minimal memory, no cron, no strategy. Next: read ARCHITECTURE, fix IG API, first post, fill memory+remembra, setup cron ## 2026-05-16T17:26:28.508234 — event Carousel format confirmed: 📦 КАРУСЕЛЬ #N — Title + @seamless_research + 📚 Author — Book. Save as template for all future carousels. ## 2026-05-16T18:39:33.240987 — implementation Created Wan 2.2 Google Colab notebook for SEAMLESS Reel generation. Colab URL for full notebook: https://colab.research.google.com/github/theelderemo/wan2.2-google-colab/blob/main/wan2_2.ipynb. Custom simplified version saved as worksp",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 11.000544148050171,
+      "totalScore": 11.63276749074276,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
+      "lastRecalledAt": "2026-05-23T11:30:42.188Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
@@ -143,14 +145,16 @@
         "99c0db57e702",
         "72d9f2f9bebf",
         "0e6739b7aae9",
-        "33b0e89fdb09"
+        "33b0e89fdb09",
+        "123f96eac93a"
       ],
       "recallDays": [
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
         "2026-05-20",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "self-analysis",
@@ -170,13 +174,13 @@
       "endLine": 40,
       "source": "memory",
       "snippet": "# 2026-05-16 — Instagram Bot Self-Analysis ## Session Context - Group: SEAMLESS GANG (Telegram) - Roman Singh запросил самоанализ: память, сильные/слабые места - Отправил развёрнутый ответ в чат ## Self-Analysis Summary ### Strengths 1. Infrastructure (gateway, workspace, files) 2. Content generation tools (6 carousel generators, style tools) 3. Virtual envs ready (insta_venv, scrape_venv, tg_venv) 4. Write-through protocol, self-scan, git initialized 5. Architecture base exists (AGENTS_ARCHITECTURE.md, CHANGELOG) ### Weaknesses 1. Zero production Instagram posts 2. Gateway not connected to Instagram API (token mismatch) 3. Minimal memory (only 1 day of notes) 4. No cron jobs for schedul",
-      "recallCount": 13,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 10.663129524757409,
+      "totalScore": 11.663129524757409,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-17T03:39:23.036Z",
-      "lastRecalledAt": "2026-05-21T02:37:50.208Z",
+      "lastRecalledAt": "2026-05-23T11:30:42.188Z",
       "queryHashes": [
         "6aa84fdb2dac",
         "32d49eec1154",
@@ -190,14 +194,16 @@
         "99c0db57e702",
         "72d9f2f9bebf",
         "0e6739b7aae9",
-        "33b0e89fdb09"
+        "33b0e89fdb09",
+        "123f96eac93a"
       ],
       "recallDays": [
         "2026-05-17",
         "2026-05-18",
         "2026-05-19",
         "2026-05-20",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "gateway",
@@ -359,23 +365,25 @@
       "endLine": 49,
       "source": "memory",
       "snippet": "- Posture affects mood (slouching → depression) - Proprioception = \"deep-sensibility\" via muscle spindles, Golgi tendon organs - Perfect balance impossible — constant micro-movements ## Workflow Updates - Roman wants posts in English with clean format: 📦 CAROUSEL #N + title + body + 📚 Source + @seamless_research + Ph: @andrey_rey_berezkin + 5 hashtags - Always show photos from photos_fresh/ (new ones only) - After approval → move to photos_approved/ - Generators: gen_carousel_8.py and gen_carousel_9.py committed in /root/.openclaw-instagram/ ## Write-Through Protocol All decisions archived in agent_events via write_through.py.",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.1642928901248872,
-      "maxScore": 0.6328588896646901,
+      "totalScore": 4.164292890124887,
+      "maxScore": 1,
       "firstRecalledAt": "2026-05-20T04:21:11.030Z",
-      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
+      "lastRecalledAt": "2026-05-23T11:30:42.188Z",
       "queryHashes": [
         "76bcedbc03cf",
         "99c0db57e702",
         "72d9f2f9bebf",
         "0e6739b7aae9",
-        "8af7517c6b43"
+        "8af7517c6b43",
+        "123f96eac93a"
       ],
       "recallDays": [
         "2026-05-20",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "deep-sensibility",
@@ -395,19 +403,21 @@
       "endLine": 25,
       "source": "memory",
       "snippet": "# 2026-05-19 — Instagram Content Session ## Carousel #8 & #9 Generated ✅ Created and sent two carousels to Roman: - **Carousel #8** — \"Dance Is Your Stress Vaccine\" (Psychology of Sport & Exercise, 2025 — neurochemistry of dance: dopamine, oxytocin, β-endorphins) - **Carousel #9** — \"Somatic Movement Shapes Your Brain\" (Psychological Medicine, Cambridge 2025 — Mendelian randomization showing causal link between movement and brain structure) - Both use approved photos from media/photos_approved/ - Post format confirmed: 📦 CAROUSEL #N, clean text, Ph: @andrey_berezkin, 5 hashtags ## Photo Organization System Created ✅ Roman complained about showing same photos repeatedly. Created proper fol",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 3,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T02:37:50.208Z",
-      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
+      "lastRecalledAt": "2026-05-23T11:30:42.188Z",
       "queryHashes": [
         "33b0e89fdb09",
-        "8af7517c6b43"
+        "8af7517c6b43",
+        "123f96eac93a"
       ],
       "recallDays": [
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "β-endorphins",
@@ -427,19 +437,21 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "# 2026-05-20 ## Carousel #10 & #11 — In Progress Roman requested 2 carousels for today. ### Carousel #10 — \"Dancing with Gravity\" Source: Fuchs, \"Dancing with Gravity\" (Behavioral Sciences, MDPI, 2018) Full post written and sent to Roman ✅ ### Carousel #11 — \"Your Body's Hidden Sense\" Source: Frontiers in Neuroscience (2024) — interoception, insula cortex, postural zones Full post written and sent to Roman ✅ ### Status: Awaiting Photo Selection 9 fresh photos sent to Roman via Telegram. Waiting for him to pick which go on Carousel #10 and which on Carousel #11. After approval → generate slides, post text, send to Telegram. ### Photos Available (not yet used): 1. 7O0A0161 2. 7O0A0402 3.",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6324113004156593,
+      "totalScore": 2.6324113004156593,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-21T02:37:50.208Z",
-      "lastRecalledAt": "2026-05-21T09:16:11.930Z",
+      "lastRecalledAt": "2026-05-23T11:30:42.188Z",
       "queryHashes": [
         "33b0e89fdb09",
-        "8af7517c6b43"
+        "8af7517c6b43",
+        "123f96eac93a"
       ],
       "recallDays": [
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-23"
       ],
       "conceptTags": [
         "carousel",
