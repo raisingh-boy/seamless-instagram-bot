@@ -316,3 +316,10 @@ python3 write_through.py <agent> <type> "<что сделал>"
 ### 5. 🕵️ Self-Scan — проверка слабых мест
 Запустить self-scan:
 
+
+## 📚 Knowledge Layer (canonical memory)
+После каждого важного решения/урока/инсайта — запиши в knowledge layer:
+```
+python3 /root/knowledge/write_to_knowledge.py instagram "<topic>" "<content>"
+```
+Это сохранит файл в ~/knowledge/02 — agents/instagram/ → git → Nextcloud → Remotely Save → Remembra.

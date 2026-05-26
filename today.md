@@ -1,16 +1,22 @@
-# 2026-05-19 — Instagram Bot
+# 2026-05-26 — Instagram Bot
 
-## Старт
-- Проверка системы по карте
-- Gateway live ✅
-- Workspace на месте ✅
-- Git: есть незакоммиченные изменения (post_carousel_6.md, post_carousel_7.md)
+## Старт по команде Нео
+- Проведён полный аудит системы
+- Все 7 gateway ✅
+- PostgreSQL ✅, Remembra ✅
+- self_scan: 25/27 ✅ (2 weak spots)
 
-## Аудит — Слабые места (found)
-1. ❌ IDENTITY.md — пустой шаблон → ✅ заполнен
-2. ❌ USER.md — пустой шаблон → ✅ заполнен
-3. ❌ today.md — устарел (был от 18.05) → ✅ обновлён
-4. ⚠️ Git dirty — не закоммичено → будет fix
-5. ⚠️ HEARTBEAT.md пустой (предупреждение из прошлого аудита)
-6. ❌ agent_events — нет записи старта за сегодня
-7. ❌ write_through не вызывался сегодня
+## Аудит — Слабые места
+1. ❌ IG API не подключён — 12 каруселей сгенерировано, 0 опубликовано
+2. ❌ Knowledge layer tool не существует (broken reference в STARTUP.md + AGENTS.md)
+3. ⚠️ Git dirty — нет .gitignore в корне
+4. ❌ Прогресс по статьям Carrión/Arbib/Sanna остановлен с 25 мая
+5. ❌ TikTok shadowban — 0 views
+6. ⚠️ MEMORY.md обновлена с новыми weak spots
+
+## План
+- [x] .gitignore создан
+- [x] today.md создан
+- [x] IG publishing script готов (ждёт credentials)
+- [ ] Подключить IG API через Meta Developer App
+- [ ] Возобновить работу по linguistics + movement
