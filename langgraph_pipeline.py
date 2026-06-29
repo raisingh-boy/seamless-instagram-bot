@@ -144,17 +144,91 @@ def notebooklm_node(state: PipelineState) -> dict:
     abstract = article.get("abstract", "")
 
     try:
+        article_title = title
+        
         slides_data = [
-            {"title": "SEAMLESS", "body": "Research meets movement"},
-            {"title": "The Question", "body": "Does movement shape\nhow we think?"},
-            {"title": "The Science", "body": abstract[:200]},
-            {"title": "Key Finding", "body": "Sensorimotor experience grounds\nlinguistic meaning in the brain."},
-            {"title": "Why It Matters", "body": "Movement isn't just exercise —\nit's how we make sense of the world."},
-            {"title": "Practice", "body": "1. Stand still. Feel your feet.\n2. Move one hand slowly.\n3. Notice how your attention shifts."},
-            {"title": "SEAMLESS", "body": "@seamless_research\nBali — Contact Improvisation\n\nPh: @andrey_berezkin"},
+            {
+                "title": "SEAMLESS<br><span style=\"color:#d4a373\">" + article_title.split(":")[0] + "</span>",
+                "body": [
+                    "What if movement itself",
+                    "is a form of thinking?",
+                    "",
+                    article_title,
+                    "",
+                    "<span style=\"font-size:16px; color:#bbb\">SEAMLESS Research · Bali</span>",
+                ]
+            },
+            {
+                "title": "The<br><span style=\"color:#d4a373\">Science</span>",
+                "body": [
+                    abstract[:200],
+                    "",
+                    "Your body carries knowledge",
+                    "your mind has forgotten.",
+                ]
+            },
+            {
+                "title": "Key<br><span style=\"color:#d4a373\">Finding</span>",
+                "body": [
+                    "Sensorimotor experience grounds",
+                    "linguistic meaning in the <b>brain</b>.",
+                    "",
+                    "Movement isn't just exercise —",
+                    "it's how we <b>make sense</b> of the world.",
+                ]
+            },
+            {
+                "title": "Why It<br><span style=\"color:#d4a373\">Matters</span>",
+                "body": [
+                    "Research shows that when you move,",
+                    "your brain doesn't just control your",
+                    "body — it <b>thinks through</b> it.",
+                    "",
+                    "The boundary between mind and body",
+                    "is not what we thought it was.",
+                ]
+            },
+            {
+                "title": "The<br><span style=\"color:#d4a373\">Practice</span>",
+                "body": [
+                    "1. Stand still. Feel your feet.",
+                    "2. Move one hand slowly.",
+                    "3. Notice how your <b>attention shifts</b>.",
+                    "",
+                    "Small movements create",
+                    "<b>profound change.</b>",
+                ]
+            },
+            {
+                "title": "<span style=\"color:#d4a373\">Somatic</span><br>Inquiry",
+                "body": [
+                    "Every gesture is a conversation",
+                    "between brain and body.",
+                    "",
+                    "CI trains you to <b>listen</b> to",
+                    "that conversation — in real time,",
+                    "through weight, momentum, and touch.",
+                ]
+            },
+            {
+                "title": "Join the<br><span style=\"color:#d4a373\">Research</span>",
+                "body": [
+                    "Move with the question.",
+                    "",
+                    "<b>Save</b> — this is your research map",
+                    "<b>Share</b> — with someone who questions",
+                    "<b>Move</b> — theory lives in practice",
+                    "",
+                    "<span style=\"color:#d4a373; font-size:28px\"><b>@seamless_research</b></span>",
+                    "<span style=\"font-size:16px; color:#bbb\">SEAMLESS Bali · Ph: @andrey_berezkin</span>",
+                    "",
+                    "<span style=\"font-size:16px; color:#bbb\">#SEAMLESS #MovementResearch #EmbodiedCognition</span>",
+                    "<span style=\"font-size:16px; color:#bbb\">#Somatics #ContactImprovisation #Bali</span>",
+                ]
+            },
         ]
 
-        caption = f"🧠 {title}\n\n{abstract[:150]}...\n\nYour body carries knowledge your mind has forgotten.\n\n#SEAMLESS #MovementResearch #EmbodiedCognition #Somatics #ContactImprovisation #Bali"
+        caption = f"📦 CAROUSEL — {article_title}\n\n{abstract[:200]}...\n\nSEAMLESS · Bali Movement Research\nPh: @andrey_berezkin\n\n#SEAMLESS #MovementResearch #EmbodiedCognition #Somatics #ContactImprovisation #Bali"
 
         return {"slides_data": slides_data, "caption_text": caption}
 
@@ -181,10 +255,10 @@ def carousel_node(state: PipelineState) -> dict:
         log(f"  → Photo: {photo}")
 
         slides = state.get("slides_data", [])
-        if not slides:
-            slides = [{"title": "", "body": "SEAMLESS Research"}] * 7
+        if not slides or len(slides) < 7:
+            slides = [{"title": "SEAMLESS", "body": ["Research meets movement"]}] * 7
 
-        # Generate carousel via gen_carousel.py
+        # Generate carousel via gen_carousel.py (SEAMLESS design)
         output_dir = f"/tmp/carousel_{state['run_id']}"
         import importlib.util
         spec = importlib.util.spec_from_file_location("gen_carousel", str(BASE_DIR / "gen_carousel.py"))
