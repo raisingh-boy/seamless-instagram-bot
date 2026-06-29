@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #f5f2ed;
+  color: #111;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+}
+
+/* ===== VAR 10: ETHEREAL / FROSTED GLASS ===== */
+
+/* Soft atmospheric background */
+.atmo-bg {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at 30% 20%, rgba(180, 210, 210, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 80%, rgba(210, 180, 160, 0.25) 0%, transparent 50%),
+    #f5f2ed;
+}
+
+/* Blurred photo area */
+.photo-blur-zone {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60%;
+  height: 55%;
+  background: linear-gradient(135deg, #c8b8a5 0%, #b5a898 40%, #a89885 100%);
+  opacity: 0.5;
+  filter: blur(30px);
+}
+
+/* Frosted glass panel */
+.glass-panel {
+  position: relative;
+  z-index: 2;
+  margin: 100px 80px;
+  padding: 70px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  max-width: 650px;
+}
+
+.glass-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.glass-headline {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+.glass-body {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
+}
+
+/* Ethereal accent elements */
+.accent-blur-1 {
+  position: absolute;
+  top: 120px;
+  right: 60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: rgba(180, 200, 200, 0.25);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.accent-blur-2 {
+  position: absolute;
+  bottom: 80px;
+  right: 150px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(200, 170, 150, 0.2);
+  filter: blur(30px);
+  z-index: 0;
+}
+
+/* Thin vertical line */
+.vert-hairline {
+  position: absolute;
+  right: 120px;
+  top: 200px;
+  bottom: 200px;
+  width: 1px;
+  background: rgba(0,0,0,0.08);
+  z-index: 1;
+}
+
+/* Meta footer */
+.glass-footer {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  right: 80px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.footer-left {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #bbb;
+}
+
+.footer-right {
+  font-size: 16px;
+  color: #999;
+}
+
+.page-dot-ethereal {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #bbb;
+  z-index: 3;
+}
+</style>
+</head>
+<body>
+
+<div class="atmo-bg"></div>
+<div class="photo-blur-zone"></div>
+<div class="accent-blur-1"></div>
+<div class="accent-blur-2"></div>
+<div class="vert-hairline"></div>
+
+<div class="page-dot-ethereal">06</div>
+
+<div class="glass-panel">
+  <div class="glass-label">SEAMLESS · RESEARCH</div>
+  <div class="glass-headline">The body<br>thinks in<br>movement.</div>
+  <div class="glass-body">
+    Proprioception is not a sense — it is a language. 
+    A continuous dialogue between tissue, gravity, and space.
+  </div>
+</div>
+
+<div class="glass-footer">
+  <div class="footer-left">ETHEREAL EDITORIAL · FROSTED GLASS</div>
+  <div class="footer-right">@seamless_research</div>
+</div>
+
+</body>
+</html>

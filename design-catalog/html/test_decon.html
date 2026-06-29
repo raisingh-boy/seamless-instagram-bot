@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;900&family=Fragment+Mono:ital@0;1&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #f4efe6;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== VAR 20: DECONSTRUCTED / ANTI-DESIGN ===== */
+
+/* Fragmented background blocks */
+.block-1 {
+  position: absolute;
+  top: 0; left: 0;
+  width: 400px; height: 350px;
+  background: #1a1a2e;
+  z-index: 0;
+}
+
+.block-2 {
+  position: absolute;
+  top: 300px; right: 0;
+  width: 350px; height: 500px;
+  background: #e94560;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.block-3 {
+  position: absolute;
+  bottom: 0; left: 350px;
+  width: 500px; height: 300px;
+  background: #0f3460;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* Typography - fragmented, overlapping */
+.type-cluster {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 80px;
+}
+
+/* Headline with multiple text-shadow offsets */
+.shadow-text {
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 0.9;
+  color: #f4efe6;
+  text-shadow: 
+    -4px -4px 0 #e94560,
+    4px 4px 0 #1a1a2e,
+    -2px 2px 0 #0f3460;
+}
+
+/* Offset overlapping label */
+.offset-label {
+  font-family: 'Fragment Mono', monospace;
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #1a1a2e;
+  transform: rotate(-3deg) translateY(-20px);
+  mix-blend-mode: difference;
+  background: #f4efe6;
+  display: inline-block;
+  padding: 4px 12px;
+}
+
+/* Text fragment floating right */
+.text-fragment {
+  position: absolute;
+  bottom: 160px;
+  right: 80px;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #e94560;
+  line-height: 1;
+  text-align: right;
+  opacity: 0.6;
+  transform: rotate(2deg);
+  z-index: 3;
+}
+
+/* Body in negative space */
+.body-zone {
+  margin-top: 50px;
+  max-width: 400px;
+}
+
+.body-text {
+  font-family: 'Fragment Mono', monospace;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #1a1a2e;
+}
+
+/* Random circle */
+.random-circle {
+  position: absolute;
+  top: 180px;
+  right: 200px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #f4efe6;
+  z-index: 4;
+}
+
+/* Broken line */
+.broken-line {
+  position: absolute;
+  bottom: 200px;
+  left: 80px;
+  width: 200px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, #1a1a2e 0px, #1a1a2e 30px, transparent 30px, transparent 45px);
+  z-index: 3;
+}
+
+/* Tag */
+.tag-absolute {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  font-family: 'Fragment Mono', monospace;
+  font-size: 12px;
+  color: #f4efe6;
+  letter-spacing: 2px;
+  z-index: 3;
+}
+</style>
+</head>
+<body>
+
+<div class="block-1"></div>
+<div class="block-2"></div>
+<div class="block-3"></div>
+
+<div class="random-circle"></div>
+<div class="broken-line"></div>
+
+<div class="tag-absolute">SEAMLESS · D21</div>
+
+<div class="type-cluster">
+  <div class="shadow-text">
+    MOVE<br>
+    <span style="font-size:50px; opacity:0.7">WITHOUT</span><br>
+    THINKING
+  </div>
+  
+  <div class="offset-label">EMBODIED INTUITION</div>
+  
+  <div class="body-zone">
+    <div class="body-text">
+      The body precedes cognition. Every movement is a decision made before 
+      the mind can articulate it. This is not instinct — it is intelligence 
+      embedded in tissue, bone, and breath.
+    </div>
+  </div>
+</div>
+
+<div class="text-fragment">
+  gravity<br>
+  speaks
+</div>
+
+</body>
+</html>

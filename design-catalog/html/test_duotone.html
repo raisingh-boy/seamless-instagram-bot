@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Zodiak:wght@300;400;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #f5f0eb;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== VAR 23: DUOTONE PHOTO + MINIMAL ===== */
+
+/* Duotone photo container */
+.duotone-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.duotone-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1) brightness(0.9);
+}
+
+.duotone-overlay {
+  position: absolute;
+  inset: 0;
+  background: #5b4a3f;
+  mix-blend-mode: color;
+  opacity: 0.8;
+}
+
+.duotone-overlay-2 {
+  position: absolute;
+  inset: 0;
+  background: #2d1f14;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+}
+
+/* Right text panel */
+.text-panel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #f5f0eb;
+  z-index: 1;
+  padding: 120px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.zodiak-headline {
+  font-family: 'Zodiak', serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.05;
+  color: #2d1f14;
+  margin-bottom: 24px;
+}
+
+.zodiak-headline em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.familjen-body {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #8c7b6e;
+  max-width: 320px;
+  margin-bottom: 30px;
+}
+
+.familjen-label {
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: #5b4a3f;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Vertical line accent */
+.v-accent {
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 120px;
+  background: rgba(45, 31, 20, 0.12);
+  z-index: 2;
+}
+
+/* Text in 3 directions */
+.vert-label {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: rgba(91, 74, 63, 0.3);
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+.rotate-label {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: rgba(91, 74, 63, 0.2);
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.page-marker {
+  position: absolute;
+  bottom: 60px;
+  right: 70px;
+  font-family: 'Zodiak', serif;
+  font-size: 18px;
+  color: #8c7b6e;
+}
+</style>
+</head>
+<body>
+
+<div class="duotone-container">
+  <img class="duotone-img" src="file:///tmp/seamless_photo2.jpg" alt="">
+  <div class="duotone-overlay"></div>
+  <div class="duotone-overlay-2"></div>
+</div>
+
+<div class="vert-label">Gravity · Weight · Momentum · Falling · Support · Touch</div>
+<div class="rotate-label">PHOTO: ANDREY BEREZKIN · BALI 2026</div>
+
+<div class="v-accent"></div>
+
+<div class="text-panel">
+  <div class="familjen-label">SEAMLESS Research</div>
+  <div class="zodiak-headline">
+    Touch<br>
+    <em>is the first</em><br>
+    language.
+  </div>
+  <div class="familjen-body">
+    Before words, before gesture, before any formal system 
+    of communication — the body speaks through contact. 
+    Skin to skin, weight to weight.
+  </div>
+  <div class="familjen-label" style="font-size:10px; margin-top:10px;">@SEAMLESS_RESEARCH · BALI · 2026</div>
+</div>
+
+<div class="page-marker">04</div>
+
+</body>
+</html>

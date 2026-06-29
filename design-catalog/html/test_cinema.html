@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700;9..40,900&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,700&family=Geist+Mono:wght@400;500;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #1a1a1a;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== VAR 19: CINEMATIC / WIDE-SCREEN LETTERBOX ===== */
+
+/* Letterbox bars */
+.letterbox-top {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 120px;
+  background: #0d0d0d;
+  z-index: 3;
+}
+
+.letterbox-bottom {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 120px;
+  background: #0d0d0d;
+  z-index: 3;
+}
+
+/* Photo in the middle */
+.cinema-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+  z-index: 0;
+  filter: saturate(0.3) brightness(0.7) contrast(1.2);
+}
+
+/* Grain overlay */
+.grain {
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.08'/%3E%3C/svg%3E");
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Content between letterbox bars */
+.content-cinema {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cinema-label {
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.cinema-headline {
+  font-family: 'Newsreader', serif;
+  font-size: 88px;
+  font-weight: 300;
+  line-height: 1.05;
+  color: #ffffff;
+  max-width: 600px;
+}
+
+.cinema-headline em {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.cinema-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+  max-width: 450px;
+  margin-top: 24px;
+}
+
+/* Frame counter */
+.frame-counter {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Geist Mono', monospace;
+  font-size: 14px;
+  color: rgba(255,255,255,0.2);
+  z-index: 4;
+}
+
+.rec-dot {
+  position: absolute;
+  top: 140px;
+  right: 100px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e94560;
+  z-index: 4;
+  animation: none;
+}
+</style>
+</head>
+<body>
+
+<img class="cinema-photo" src="file:///tmp/seamless_photo2.jpg" alt="">
+<div class="grain"></div>
+
+<div class="letterbox-top"></div>
+<div class="letterbox-bottom"></div>
+
+<div class="rec-dot"></div>
+<div class="frame-counter">03</div>
+
+<div class="content-cinema">
+  <div class="cinema-label">SEAMLESS · CINEMATIC SERIES</div>
+  <div class="cinema-headline">
+    Weight<br>
+    <em>is not</em><br>
+    a burden.
+  </div>
+  <div class="cinema-subtitle">
+    It is the body's conversation with the ground. 
+    A dialogue that began before language and continues 
+    in every step, every fall, every recovery.
+  </div>
+</div>
+
+</body>
+</html>

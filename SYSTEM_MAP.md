@@ -44,8 +44,6 @@ docker exec nextcloud-db psql -U nextcloud -d outreach
 - Чужие workspace без команды
 - Чужой Telethon
 - Постить без двойного подтверждения
-- Говорить «готово» без verify + write_through + commit
-- Использовать step_logger.sh
 
 Создана: 2026-05-17 05:31 CEST
 Источник: Агент Смит (main)

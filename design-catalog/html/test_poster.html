@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=DM+Mono:wght@300;400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #f7f3e8;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== POSTER / GIG POSTER STYLE ===== */
+
+/* Diagonal slash */
+.diagonal-slash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(155deg, #1a1a2e 0%, #1a1a2e 42%, transparent 42.5%);
+  z-index: 0;
+}
+
+/* Second diagonal */
+.diagonal-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(155deg, #e94560 0%, #e94560 41.5%, transparent 42%);
+  z-index: 0;
+  opacity: 0.9;
+}
+
+/* Large typography */
+.big-type-zone {
+  position: absolute;
+  top: 50%;
+  left: 80px;
+  transform: translateY(-55%);
+  z-index: 2;
+}
+
+.big-type-zone .syncopate {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 0.9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.big-type-zone .mono-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 16px;
+  letter-spacing: 6px;
+  color: rgba(255,255,255,0.65);
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+
+/* Right side content */
+.right-content {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  text-align: right;
+  max-width: 280px;
+}
+
+.right-content .accent-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 80px;
+  color: #e94560;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.right-content .small-info {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #1a1a2e;
+}
+
+/* Bottom footer band */
+.footer-band {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  z-index: 3;
+}
+
+.footer-band .band-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Photo element */
+.photo-element {
+  position: absolute;
+  right: 60px;
+  bottom: 140px;
+  width: 240px;
+  height: 320px;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.85;
+  mix-blend-mode: normal;
+}
+
+/* Circle ring */
+.ring {
+  position: absolute;
+  right: 40px;
+  bottom: 120px;
+  width: 280px;
+  height: 380px;
+  border: 2px solid rgba(26,26,46,0.12);
+  z-index: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="diagonal-slash"></div>
+<div class="diagonal-inner"></div>
+
+<div class="ring"></div>
+<img class="photo-element" src="file:///tmp/seamless_photo2.jpg" alt="">
+
+<div class="big-type-zone">
+  <div class="syncopate">
+    gravity<br>
+    <span style="font-size:60px;opacity:0.5">as a</span><br>
+    language
+  </div>
+  <div class="mono-sub">Movement · Physics · Dance</div>
+</div>
+
+<div class="right-content">
+  <div class="accent-num">07</div>
+  <div class="small-info">
+    Seamless Research<br>
+    Bali · 2026<br>
+    Movement Education<br>
+    for Dancers & Movers
+  </div>
+</div>
+
+<div class="footer-band">
+  <div class="band-label">SEAMLESS · BALI</div>
+  <div class="band-label">@SEAMLESS_RESEARCH</div>
+  <div class="band-label">PH: @ANDREY_BEREZKIN</div>
+</div>
+
+</body>
+</html>

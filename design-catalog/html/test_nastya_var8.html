@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #f0ece4;
+  color: #111;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Courier Prime', monospace;
+}
+
+/* ===== #8: BRUTALIST EDITORIAL ===== */
+
+/* Raw structural elements */
+.raw-border-top {
+  position: absolute;
+  top: 30px; left: 30px; right: 30px;
+  height: 4px;
+  background: #111;
+}
+
+.raw-border-bottom {
+  position: absolute;
+  bottom: 30px; left: 30px; right: 30px;
+  height: 4px;
+  background: #111;
+}
+
+.raw-border-left {
+  position: absolute;
+  top: 30px; bottom: 30px; left: 30px;
+  width: 4px;
+  background: #111;
+}
+
+/* Visible grid lines */
+.grid-line-h1 {
+  position: absolute;
+  left: 0; right: 0; top: 50%;
+  height: 1px;
+  background: rgba(0,0,0,0.12);
+}
+
+.grid-line-v1 {
+  position: absolute;
+  top: 0; bottom: 0; left: 35%;
+  width: 1px;
+  background: rgba(0,0,0,0.12);
+}
+
+.grid-line-v2 {
+  position: absolute;
+  top: 0; bottom: 0; left: 65%;
+  width: 1px;
+  background: rgba(0,0,0,0.12);
+}
+
+/* Content */
+.content-brut {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 80px;
+}
+
+.mono-label-brut {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.big-type {
+  font-size: 110px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  max-width: 800px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  text-decoration-thickness: 4px;
+}
+
+.small-caption {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 500px;
+  border-left: 4px solid #111;
+  padding-left: 24px;
+}
+
+/* Brutalist circle */
+.brut-circle {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 280px;
+  border: 4px solid #111;
+  border-radius: 50%;
+  background: #ddd5c8;
+  z-index: 1;
+}
+
+.brut-circle-inner {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  background: #111;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Footer metadata strip */
+.meta-strip {
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
+  right: 80px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+  z-index: 2;
+}
+
+.page-indicator-brut {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 18px;
+  color: #111;
+  font-weight: 600;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<!-- Visible grid -->
+<div class="grid-line-h1"></div>
+<div class="grid-line-v1"></div>
+<div class="grid-line-v2"></div>
+
+<!-- Structural borders -->
+<div class="raw-border-top"></div>
+<div class="raw-border-bottom"></div>
+<div class="raw-border-left"></div>
+
+<!-- Brutalist shapes -->
+<div class="brut-circle"></div>
+<div class="brut-circle-inner"></div>
+
+<!-- Page indicator -->
+<div class="page-indicator-brut">04</div>
+
+<!-- Content -->
+<div class="content-brut">
+  <div class="mono-label-brut">SEAMLESS · RESEARCH · 2026</div>
+  
+  <div class="big-type">
+    <span class="strike-through">Thinking</span><br>
+    Moving<br>
+    Knowing
+  </div>
+  
+  <div class="small-caption">
+    Embodied cognition is not a theory. It is a practice. 
+    The body knows before the mind can name.
+  </div>
+</div>
+
+<div class="meta-strip">
+  <span>BRUTALIST EDITORIAL · RAW · ANTI-AESTHETIC</span>
+  <span>@SEAMLESS_RESEARCH</span>
+</div>
+
+</body>
+</html>

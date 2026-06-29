@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #0a0a0a;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Syne', sans-serif;
+}
+
+/* ===== DARK MODE — AGGRESSIVE TYPOGRAPHY ===== */
+
+/* Glitch-like offset text shadow */
+.glitch-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 130px;
+  font-weight: 800;
+  line-height: 0.9;
+  color: #fff;
+  text-shadow: 
+    -3px -3px 0 #ff3366,
+    3px 3px 0 #3366ff;
+  max-width: 700px;
+}
+
+/* Neon accent */
+.neon-line {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff3366, #ff9900, #3366ff);
+  margin: 30px 0;
+}
+
+/* Mono data blocks */
+.data-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.data-block .num {
+  font-family: 'Space Mono', monospace;
+  font-size: 48px;
+  font-weight: 700;
+  color: #ff3366;
+  line-height: 1;
+}
+
+.data-block .label {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: rgba(255,255,255,0.4);
+  margin-top: 8px;
+}
+
+/* Vertical text strip - right */
+.v-strip-right {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  background: linear-gradient(180deg, #ff3366, #3366ff);
+  z-index: 0;
+}
+
+.v-strip-text {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: rgba(255,255,255,0.3);
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.content-zone {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 40px;
+}
+
+.page-num {
+  position: absolute;
+  bottom: 60px;
+  right: 100px;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  color: rgba(255,255,255,0.25);
+  z-index: 2;
+}
+
+.photo-corner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.3;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="v-strip-right"></div>
+<div class="v-strip-text">SEAMLESS · MOVEMENT · DARK SERIES</div>
+<div class="page-num">D3</div>
+
+<!-- Photo corner accent with blend mode -->
+<img class="photo-corner" src="file:///tmp/seamless_photo2.jpg" alt="">
+
+<div class="content-zone">
+  <div class="top-label">DARK EDITORIAL · 2026</div>
+  
+  <div class="glitch-text">
+    BODY<br>
+    FIRST
+  </div>
+  
+  <div class="neon-line"></div>
+  
+  <div class="data-grid">
+    <div class="data-block">
+      <div class="num">86B</div>
+      <div class="label">NEURONS IN THE BODY</div>
+    </div>
+    <div class="data-block">
+      <div class="num">200+</div>
+      <div class="label">BONES IN MOTION</div>
+    </div>
+    <div class="data-block">
+      <div class="num">600+</div>
+      <div class="label">MUSCLES ACTIVATED</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

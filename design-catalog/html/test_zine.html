@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Geist+Mono:wght@400;500;700&family=Switzer:wght@400;600;800&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px; height: 1350px;
+  background: #f4ec00;
+  overflow: hidden; position: relative;
+}
+
+/* ===== YOUNG / DARING / ZINE STYLE ===== */
+
+/* Photo - raw, off-center */
+.photo-zine {
+  position: absolute;
+  top: 40px; left: 30px;
+  width: 500px; height: 500px;
+  object-fit: cover;
+  filter: contrast(1.3) brightness(0.9);
+  transform: rotate(-2deg);
+  z-index: 1;
+}
+
+/* Glitch stripe */
+.glitch-stripe {
+  position: absolute;
+  top: 520px; left: 0; right: 0;
+  height: 40px;
+  background: linear-gradient(90deg, #ff3366, #ff3366 30%, transparent 30%, transparent 35%, #000 35%, #000 40%, transparent 40%);
+  z-index: 3;
+}
+
+/* Big bold type - Rubik Glitch */
+.big-zine {
+  position: absolute;
+  top: 280px; right: 40px;
+  font-family: 'Rubik Glitch', display;
+  font-size: 140px;
+  line-height: 0.9;
+  color: #000;
+  text-transform: uppercase;
+  z-index: 2;
+  text-align: right;
+  letter-spacing: -4px;
+}
+
+/* Scattered labels */
+.scatter-1 {
+  position: absolute;
+  top: 580px; left: 60px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 13px; font-weight: 700;
+  letter-spacing: 2px;
+  color: #000;
+  transform: rotate(3deg);
+  background: #fff;
+  padding: 4px 12px;
+  z-index: 3;
+}
+
+.scatter-2 {
+  position: absolute;
+  top: 630px; left: 200px;
+  font-family: 'Switzer', sans-serif;
+  font-size: 56px; font-weight: 800;
+  color: #ff3366;
+  transform: rotate(-4deg);
+  z-index: 2;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.scatter-3 {
+  position: absolute;
+  bottom: 200px; left: 50px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px; letter-spacing: 6px;
+  color: #000; transform: rotate(1deg);
+  background: #fff; padding: 4px 10px;
+  z-index: 3;
+}
+
+/* Body text - raw placement */
+.raw-text {
+  position: absolute;
+  bottom: 280px; right: 50px;
+  font-family: 'Switzer', sans-serif;
+  font-size: 18px; font-weight: 400;
+  line-height: 1.5; color: #000;
+  max-width: 350px; text-align: right;
+  z-index: 2;
+  transform: rotate(0.5deg);
+}
+
+/* Vertical bar */
+.vert-bar {
+  position: absolute;
+  top: 560px; bottom: 0; right: 0;
+  width: 8px;
+  background: #000;
+  z-index: 1;
+}
+
+/* Diagonal text strip */
+.diag-strip {
+  position: absolute;
+  bottom: 100px; right: 50px;
+  font-family: 'Rubik Glitch', display;
+  font-size: 60px; color: #ff3366;
+  opacity: 0.3; transform: rotate(-15deg);
+  z-index: 1; text-transform: uppercase;
+}
+
+/* Bottom info */
+.bottom-zine {
+  position: absolute;
+  bottom: 40px; left: 60px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px; letter-spacing: 3px;
+  color: #000;
+  z-index: 3;
+}
+
+.page-zine {
+  position: absolute;
+  bottom: 40px; right: 60px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 48px; font-weight: 700;
+  color: #ff3366;
+  z-index: 3;
+}
+</style>
+</head>
+<body>
+
+<img class="photo-zine" src="file:///tmp/seamless_photo1.jpg" alt="">
+
+<div class="glitch-stripe"></div>
+
+<div class="big-zine">MOVE</div>
+
+<div class="scatter-1">EMBODIED · 2026</div>
+<div class="scatter-2">OR</div>
+<div class="scatter-3">SEAMLESS LAB</div>
+
+<div class="raw-text">
+  The body doesn't ask permission. 
+  It already knows. Before language. 
+  Before theory. Before doubt. 
+  Movement is the original intelligence.
+</div>
+
+<div class="diag-strip">BALI</div>
+
+<div class="bottom-zine">@SEAMLESS_RESEARCH</div>
+<div class="page-zine">07</div>
+
+</body>
+</html>

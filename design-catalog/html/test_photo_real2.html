@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@200;300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #faf8f4;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Photo on the right */
+.photo-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Text zone - left side */
+.text-zone {
+  position: relative;
+  z-index: 1;
+  width: 52%;
+  height: 100%;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Dramatic oversized number */
+.big-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 280px;
+  font-weight: 900;
+  line-height: 0.7;
+  color: #f0ece5;
+  position: absolute;
+  left: -40px;
+  top: 80px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Italic serif headline */
+.headline-serif {
+  font-family: 'Playfair Display', serif;
+  font-size: 58px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Mono body */
+.body-mono {
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+  max-width: 340px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Horizontal rule */
+.hr-accent {
+  width: 40px;
+  height: 3px;
+  background: #c4a882;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Tiny label */
+.tiny-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: #bbb;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+/* Rotated text strip top-right */
+.rotated-strip {
+  position: absolute;
+  top: 200px;
+  right: -90px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: rgba(0,0,0,0.15);
+  transform: rotate(90deg);
+  white-space: nowrap;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* Page indicator */
+.page-num {
+  position: absolute;
+  bottom: 50px;
+  left: 70px;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  color: #ccc;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<!-- Real photo -->
+<img class="photo-right" src="file:///tmp/seamless_photo2.jpg" alt="">
+
+<!-- Text zone -->
+<div class="text-zone">
+  <div class="big-number">04</div>
+  
+  <div class="headline-serif">
+    Gravity<br>
+    is not<br>
+    a force —<br>
+    it is a<br>
+    relationship.
+  </div>
+  
+  <div class="hr-accent"></div>
+  
+  <div class="body-mono">
+    The body negotiates weight, momentum, and ground 
+    through an ongoing dialogue. Contact improvisation 
+    makes this dialogue visible.
+  </div>
+  
+  <div class="tiny-label">Seamless · Research · 2026</div>
+</div>
+
+<div class="rotated-strip">PHOTO: ANDREY BEREZKIN · BALI · MOVEMENT LAB</div>
+<div class="page-num">04 / 07</div>
+
+</body>
+</html>

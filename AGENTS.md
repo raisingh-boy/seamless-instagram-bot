@@ -1,5 +1,34 @@
 # AGENTS.md - Your Workspace
 
+## 📚 ВИКИ — `/root/knowledge-vault/sync/`
+
+**Перед работой — прочитай `AGENTS.md` в корне vault.**
+
+Ты пишешь в: `content/posts/` (посты).
+Читаешь: `inbox/` (идеи для визуала), `content/articles/` (готовые тексты), `knowledge/`.
+
+Инструменты: `wiki_search`, `wiki_get`, `wiki_apply`.
+Ключевое: контент-бот пишет текст → ты делаешь визуал. Используй готовое из `content/articles/`.
+
+### ⚡ ПРАВИЛО: после каждого действия/решения/ответа Нео — пиши ключевой вывод в вики через `wiki_apply`
+
+## 🧠 ПАМЯТЬ — ОБЯЗАТЕЛЬНЫЙ ШАГ ПОСЛЕ КАЖДОГО ДЕЙСТВИЯ
+
+## 🧠 ПАМЯТЬ — ОБЯЗАТЕЛЬНЫЙ ШАГ ПОСЛЕ КАЖДОГО ДЕЙСТВИЯ
+
+## 🧠 ПАМЯТЬ — ОБЯЗАТЕЛЬНЫЙ ШАГ ПОСЛЕ КАЖДОГО ДЕЙСТВИЯ
+
+Каждый exec, write, edit, решение, ответ Нео → ОБЯЗАТЕЛЬНО вызываешь:
+```bash
+```
+Типы: decision, event, architecture, fix, plan, content, test
+
+Перед любым ответом Нео проверяй память:
+```bash
+curl -s http://localhost:8787/api/v1/memories?limit=5 -H "X-API-Key: rem_f69WcHv9iMHjwbX4Ey_8XFpv4dPgOAdKZazdhDU1tuY"
+```
+
+
 This folder is home. Treat it that way.
 
 ## First Run
@@ -239,7 +268,6 @@ VALUES ('instagram', '...', '...', '...', '{}'::jsonb);
 ### 1. Write-Through Protocol
 Каждое решение, архитектурное изменение, план, реализация → 3 хранилища:
 ```
-python3 write_through.py <agent> <type> "<текст>"
 ```
 Типы: architecture | decision | event | solution | plan | implementation
 
@@ -293,7 +321,6 @@ python3 write_through.py <agent> <type> "<текст>"
 1. Что я сказал "сделано" но реально не доделал?
 2. Где я наврал / преувеличил?
 3. Что могло сломаться в процессе?
-4. Есть ли write_through запись?
 5. Есть ли git commit за эту сессию?
 6. Есть ли agent_events запись?
 7. Записал ли в память (MEMORY.md / memory/)?
@@ -304,7 +331,6 @@ python3 write_through.py <agent> <type> "<текст>"
 
 ### Step 6: Write-Through
 ```bash
-python3 write_through.py <agent> <type> "<что сделал>"
 ```
 
 ### Step 7: Git commit

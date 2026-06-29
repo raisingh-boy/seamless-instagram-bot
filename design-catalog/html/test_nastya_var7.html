@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #ffffff;
+  color: #0d0d0d;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+/* ===== VARIATION 7: Swiss Editorial + Carousel Best Practices ===== */
+
+/* Grid system: 12-column, 80px margins, 20px gutters */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 24px;
+  height: 100%;
+  padding: 80px 80px 80px 80px;
+}
+
+/* ===== HEADER ROW ===== */
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.series-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #aaa;
+}
+
+.slide-counter {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* ===== HERO AREA ===== */
+.hero {
+  grid-column: 1 / 8;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.hero-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #bbb;
+  margin-bottom: 8px;
+}
+
+.hero-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  color: #0d0d0d;
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #666;
+  font-weight: 400;
+  max-width: 420px;
+  font-style: italic;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: #0d0d0d;
+}
+
+/* ===== IMAGE AREA ===== */
+.image-area {
+  grid-column: 9 / -1;
+  grid-row: 2;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(155deg, #c4b8a8 0%, #d4c4b4 30%, #b5a292 60%, #9e8e7e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-credit {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgba(0,0,0,0.3);
+}
+
+/* ===== BOTTOM META ===== */
+.meta {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.meta-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #bbb;
+}
+
+.meta-brand {
+  font-family: 'Courier Prime', monospace;
+  font-size: 16px;
+  color: #999;
+}
+
+/* Vertical accent */
+.accent-vert {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: #ddd;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+}
+
+/* Watermark */
+.watermark {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 180px;
+  font-weight: 300;
+  color: #f5f5f3;
+  line-height: 1;
+  letter-spacing: -8px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.content-zone {
+  position: relative;
+  z-index: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="watermark">SEAMLESS</div>
+
+<div class="content-zone" style="height:100%">
+  <div class="grid">
+    
+    <!-- Header -->
+    <div class="header">
+      <div>
+        <div class="series-label">MOVEMENT RESEARCH · 2026</div>
+      </div>
+      <div class="slide-counter">01 / 07</div>
+    </div>
+    
+    <!-- Hero text -->
+    <div class="hero">
+      <div class="hero-number">PART I — FOUNDATIONS</div>
+      <div class="hero-title">Gravity<br>is the first<br>teacher.</div>
+      <div class="divider"></div>
+      <div class="hero-subtitle">
+        Before technique, before form — there is weight. 
+        The body's relationship with gravity shapes every 
+        movement we make. This is where dance begins.
+      </div>
+    </div>
+    
+    <!-- Image -->
+    <div class="image-area">
+      <div class="image-bg"></div>
+      <div class="image-credit">PH: @ANDREY_BEREZKIN</div>
+    </div>
+    
+    <!-- Bottom meta -->
+    <div class="meta">
+      <div class="meta-tag">SWISS EDITORIAL · TYPOGRAPHY · NEGATIVE SPACE · ASYMMETRY</div>
+      <div class="meta-brand">@seamless_research</div>
+    </div>
+  </div>
+</div>
+
+<div class="accent-vert">SEAMLESS · BALI · 2026</div>
+
+</body>
+</html>

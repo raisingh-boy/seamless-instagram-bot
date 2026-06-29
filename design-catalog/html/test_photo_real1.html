@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@200;300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Courier Prime', monospace;
+  background: #000;
+}
+
+/* Full photo */
+.photo-full {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Dark overlay so text pops */
+.overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.55) 0%,
+    rgba(0,0,0,0.25) 40%,
+    rgba(0,0,0,0.55) 100%
+  );
+  z-index: 1;
+}
+
+/* Content layer */
+.content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70px 80px;
+}
+
+/* Top row */
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Outlined text - stroke effect */
+.stroke-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  font-weight: 900;
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.85);
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+/* Ultra-wide spaced label */
+.wide-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 12px;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}
+
+/* Center headline area */
+.center-area {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Main headline - mixed weights */
+.headline-mixed {
+  font-family: 'Playfair Display', serif;
+  font-size: 96px;
+  line-height: 1.0;
+  color: #ffffff;
+  max-width: 800px;
+}
+
+.headline-mixed .light {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.headline-mixed .bold {
+  font-weight: 900;
+}
+
+/* Subtitle with dramatic letter-spacing */
+.subtitle-wide {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  color: rgba(255,255,255,0.65);
+  text-transform: uppercase;
+  max-width: 500px;
+  line-height: 1.8;
+}
+
+/* Bottom area */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* Mono tag */
+.mono-footer {
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Vertical text on right edge */
+.vert-edge {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 8px;
+  color: rgba(255,255,255,0.35);
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* Page dot */
+.page-dot {
+  position: absolute;
+  top: 70px;
+  right: 80px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.7);
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<!-- Use actual SEAMLESS photo -->
+<img class="photo-full" src="file:///tmp/seamless_photo1.jpg" alt="">
+<div class="overlay-dark"></div>
+
+<div class="page-dot">01</div>
+<div class="vert-edge">SEAMLESS · BALI · MOVEMENT · 2026</div>
+
+<div class="content">
+  <div class="top-row">
+    <div class="wide-label">MOVEMENT RESEARCH</div>
+    <div class="stroke-text">SEAMLESS</div>
+  </div>
+  
+  <div class="center-area">
+    <div class="headline-mixed">
+      <span class="light">the body</span><br>
+      <span class="bold">REMEMBERS</span>
+    </div>
+    <div class="subtitle-wide">
+      EMBODIED COGNITION · SOMATIC PRACTICE · CONTACT IMPROVISATION
+    </div>
+  </div>
+  
+  <div class="bottom-row">
+    <div class="mono-footer">PHOTO: @ANDREY_BEREZKIN</div>
+    <div class="mono-footer">@SEAMLESS_RESEARCH</div>
+  </div>
+</div>
+
+</body>
+</html>

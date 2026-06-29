@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@300;400;500;600;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px; height: 1350px;
+  background: #f7f5f0;
+  overflow: hidden; position: relative;
+}
+
+/* ===== ASIAN ARCHITECTURAL MINIMAL ===== */
+
+/* Photo - large, architectural crop */
+.photo-arch {
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 100%; height: 48%;
+  object-fit: cover;
+  filter: brightness(0.95) saturate(0.7);
+  z-index: 0;
+}
+
+/* Subtle gradient above photo */
+.gradient-above {
+  position: absolute;
+  left: 0; bottom: 48%;
+  width: 100%; height: 120px;
+  background: linear-gradient(to bottom, #f7f5f0, transparent);
+  z-index: 1;
+}
+
+/* Text zone - spacious */
+.text-arch {
+  position: relative; z-index: 2;
+  padding: 90px 80px;
+  height: 52%;
+  display: flex; flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Japanese-style vertical text */
+.vert-jp {
+  position: absolute;
+  right: 40px; top: 50%;
+  transform: translateY(-60%);
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16px; font-weight: 300;
+  color: rgba(0,0,0,0.15);
+  writing-mode: vertical-rl;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+/* Zen headline */
+.zen-headline {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 56px; font-weight: 700;
+  line-height: 1.2; color: #1a1a1a;
+  letter-spacing: -1px;
+  max-width: 600px;
+}
+
+.zen-headline .light {
+  font-weight: 300;
+}
+
+/* Horizontal rule - thin */
+.hr-zen {
+  width: 100px; height: 1px;
+  background: #c4b5a5; margin: 24px 0;
+}
+
+/* Body */
+.zen-body {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 15px; font-weight: 300;
+  line-height: 2.0; color: #999;
+  max-width: 420px;
+}
+
+/* Number in circle */
+.num-circle {
+  position: absolute;
+  top: 80px; right: 80px;
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex; align-items: center;
+  justify-content: center;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 18px; font-weight: 300;
+  color: #ccc;
+  z-index: 3;
+}
+
+/* Rotated label */
+.rot-arch {
+  position: absolute;
+  left: 0; bottom: 180px;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 11px; font-weight: 300;
+  letter-spacing: 8px;
+  color: rgba(0,0,0,0.1);
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Japanese character accent */
+.jp-accent {
+  position: absolute;
+  top: 80px; left: 80px;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 160px; font-weight: 900;
+  color: rgba(0,0,0,0.03);
+  line-height: 1;
+  z-index: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="jp-accent">静</div>
+
+<div class="num-circle">03</div>
+<div class="vert-jp">身体の知性 · 動きの哲学 · 重力との対話</div>
+<div class="rot-arch">PHOTO: ANDREY BEREZKIN · BALI · 2026</div>
+
+<div class="text-arch">
+  <div class="zen-headline">
+    Stillness<br>
+    <span class="light">is the beginning</span><br>
+    of movement.
+  </div>
+  <div class="hr-zen"></div>
+  <div class="zen-body">
+    静けさは動きの始まりである。沈黙の中で、身体は重力との対話を始める。
+    In silence, the body begins its dialogue with gravity.
+  </div>
+</div>
+
+<div class="gradient-above"></div>
+<img class="photo-arch" src="file:///tmp/seamless_photo1.jpg" alt="">
+
+</body>
+</html>

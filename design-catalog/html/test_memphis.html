@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #e8e2d5;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== MEMPHIS / 80s POSTMODERN ===== */
+
+/* Squiggly line */
+.squiggle {
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  right: 60px;
+  height: 3px;
+  background: repeating-linear-gradient(
+    90deg,
+    #ff6b6b 0px, #ff6b6b 40px,
+    #4ecdc4 40px, #4ecdc4 80px,
+    #ffe66d 80px, #ffe66d 120px,
+    #1a535c 120px, #1a535c 160px
+  );
+  z-index: 1;
+}
+
+/* Memphis geometric shapes */
+.memphis-triangle {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-bottom: 130px solid #ff6b6b;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.memphis-squiggle {
+  position: absolute;
+  bottom: 200px;
+  left: 80px;
+  width: 120px;
+  height: 120px;
+  border: 3px dotted #4ecdc4;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.memphis-zigzag {
+  position: absolute;
+  top: 400px;
+  right: 60px;
+  width: 60px;
+  height: 200px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffe66d,
+    #ffe66d 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Typography */
+.typo-main {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+.instrument-headline {
+  font-family: 'Instrument Serif', serif;
+  font-size: 100px;
+  font-style: italic;
+  line-height: 0.95;
+  color: #1a535c;
+  max-width: 650px;
+}
+
+.instrument-headline .highlight {
+  background: #ffe66d;
+  padding: 0 8px;
+  display: inline-block;
+}
+
+.mono-caption {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  color: #ff6b6b;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 24px;
+}
+
+.body-inter {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  max-width: 500px;
+  margin-top: 30px;
+}
+
+/* Photo in circle */
+.photo-circle {
+  position: absolute;
+  right: 100px;
+  top: 500px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+  border: 4px solid #fff;
+  box-shadow: 12px 12px 0 #4ecdc4;
+}
+
+/* Bottom info */
+.bottom-info {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  right: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.page-indicator {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #999;
+}
+
+.brand-tag {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #1a535c;
+}
+</style>
+</head>
+<body>
+
+<!-- Memphis shapes -->
+<div class="memphis-triangle"></div>
+<div class="memphis-squiggle"></div>
+<div class="memphis-zigzag"></div>
+<div class="squiggle"></div>
+
+<!-- Circular photo -->
+<img class="photo-circle" src="file:///tmp/seamless_photo1.jpg" alt="">
+
+<div class="typo-main">
+  <div class="instrument-headline">
+    The body<br>
+    <span class="highlight">learns</span><br>
+    first.
+  </div>
+  <div class="mono-caption">Embodied Cognition · Somatic Practice</div>
+  <div class="body-inter">
+    Before language, before theory, before any formal system of knowledge — 
+    the body was already learning. Every movement is a question. Every 
+    response is understanding.
+  </div>
+</div>
+
+<div class="bottom-info">
+  <div class="page-indicator">05 / 07</div>
+  <div class="brand-tag">@SEAMLESS_RESEARCH</div>
+</div>
+
+</body>
+</html>

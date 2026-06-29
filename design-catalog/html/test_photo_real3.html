@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@200;300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #fdfcf7;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== VAR 11: MULTI-DIRECTION TYPOGRAPHY + REAL PHOTO ===== */
+
+/* Photo in center */
+.photo-center {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  height: 560px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Decorative frame around photo */
+.photo-frame {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%) translateY(-10px);
+  width: 420px;
+  height: 560px;
+  border: 2px solid rgba(0,0,0,0.08);
+  z-index: 0;
+}
+
+/* ===== TEXT DIRECTIONS ===== */
+
+/* Horizontal - top left */
+.h-top-left {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 8px;
+  color: #bbb;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+/* Horizontal - right side headline */
+.h-right-headline {
+  position: absolute;
+  top: 50%;
+  right: 70px;
+  transform: translateY(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.05;
+  color: #111;
+  max-width: 400px;
+  text-align: right;
+  z-index: 2;
+}
+
+/* Vertical - left edge going down */
+.v-left-edge {
+  position: absolute;
+  left: 30px;
+  top: 200px;
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 6px;
+  color: rgba(0,0,0,0.15);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+/* Rotated - bottom left */
+.r-bottom-left {
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: #ccc;
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  white-space: nowrap;
+  text-transform: uppercase;
+  z-index: 0;
+}
+
+/* Small horizontal accent line */
+.accent-line-h {
+  position: absolute;
+  top: 180px;
+  left: 80px;
+  width: 50px;
+  height: 1px;
+  background: #c4a882;
+  z-index: 2;
+}
+
+/* Body text bottom */
+.body-bottom {
+  position: absolute;
+  bottom: 100px;
+  right: 70px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #888;
+  max-width: 380px;
+  text-align: right;
+  font-style: italic;
+  z-index: 2;
+}
+
+/* Page marker */
+.page {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 14px;
+  color: #ccc;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<!-- Photo -->
+<img class="photo-center" src="file:///tmp/seamless_photo2.jpg" alt="">
+<div class="photo-frame"></div>
+
+<!-- All 3 text directions simultaneously -->
+<div class="h-top-left">CONTACT IMPROVISATION</div>
+<div class="v-left-edge">WEIGHT · FALLING · SUPPORT · MOMENTUM · GRAVITY · TOUCH</div>
+<div class="r-bottom-left">PH: ANDREY BEREZKIN · BALI 2026</div>
+
+<div class="accent-line-h"></div>
+
+<div class="h-right-headline">
+  Movement<br>
+  is the<br>
+  mother<br>
+  of all<br>
+  knowing.
+</div>
+
+<div class="body-bottom">
+  The body possesses an intelligence that precedes language.
+  Through improvised movement, we access knowledge stored 
+  not in the mind, but in the tissues themselves.
+</div>
+
+<div class="page">07</div>
+
+</body>
+</html>

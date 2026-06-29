@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@300;400;500;600;700&family=Archivo:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #efeae2;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== VAR 18: CONTEMPORARY GALLERY / ART SPACE ===== */
+
+/* Large bold number background */
+.bg-number {
+  position: absolute;
+  top: -80px;
+  right: -40px;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 500px;
+  font-weight: 700;
+  color: #e8e0d5;
+  line-height: 1;
+  z-index: 0;
+}
+
+/* Vertical text museum label */
+.museum-label {
+  position: absolute;
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-family: 'Archivo', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 8px;
+  color: #8c8279;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+/* Content */
+.content-area {
+  position: relative;
+  z-inde: 2;
+  height: 100%;
+  padding: 100px 120px 100px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.gallery-headline {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 96px;
+  font-weight: 500;
+  line-height: 0.92;
+  color: #2c2416;
+  max-width: 700px;
+  margin-bottom: 24px;
+}
+
+.archivo-sub {
+  font-family: 'Archivo', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #8c8279;
+  line-height: 1.5;
+  max-width: 450px;
+}
+
+/* Photo - off-center */
+.gallery-photo {
+  position: absolute;
+  right: 80px;
+  top: 120px;
+  width: 380px;
+  height: 500px;
+  object-fit: cover;
+  z-index: 2;
+  border-radius: 2px;
+}
+
+.gallery-photo-2 {
+  position: absolute;
+  right: 200px;
+  top: 380px;
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+/* Meta line */
+.gallery-meta {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.gallery-meta .meta-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #b5aca2;
+}
+
+/* Line accent */
+.line-accent {
+  width: 80px;
+  height: 1px;
+  background: #2c2416;
+  margin-bottom: 16px;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-number">02</div>
+<div class="museum-label">CONTEMPORARY MOVEMENT STUDIES</div>
+
+<img class="gallery-photo" src="file:///tmp/seamless_photo2.jpg" alt="">
+<img class="gallery-photo-2" src="file:///tmp/seamless_photo1.jpg" alt="">
+
+<div class="content-area">
+  <div class="line-accent"></div>
+  <div class="gallery-headline">
+    Embodied<br>
+    intelligence
+  </div>
+  <div class="archivo-sub">
+    The body is not a vehicle for the mind — 
+    it is an equal partner in cognition. Movement 
+    reveals what language cannot express.
+  </div>
+  <div class="gallery-meta">
+    <div class="meta-item">SEAMLESS</div>
+    <div class="meta-item">BALI · 2026</div>
+    <div class="meta-item">RESEARCH LAB</div>
+  </div>
+</div>
+
+</body>
+</html>

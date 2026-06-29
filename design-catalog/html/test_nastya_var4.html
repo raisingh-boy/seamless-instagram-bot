@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  font-family: 'Courier Prime', 'Courier New', monospace;
+  background: #ffffff;
+  color: #0d0d0d;
+  overflow: hidden;
+  position: relative;
+}
+
+/* VARIATION 4: Asymmetric editorial - photo right, text left */
+
+.split-container {
+  display: flex;
+  height: 100%;
+}
+
+.text-panel {
+  width: 45%;
+  padding: 100px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fafaf8;
+}
+
+.photo-panel {
+  width: 55%;
+  background: linear-gradient(180deg, #b5a292 0%, #c4b8a8 50%, #9e8e7e 100%);
+  position: relative;
+}
+
+.number-badge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 120px;
+  font-weight: 300;
+  color: #e8e4e0;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: #0d0d0d;
+  margin-bottom: 24px;
+}
+
+.brand {
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.page-marker {
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+  font-size: 18px;
+  color: #ccc;
+}
+</style>
+</head>
+<body>
+
+<div class="split-container">
+  <div class="text-panel">
+    <div class="number-badge">01</div>
+    <div class="divider"></div>
+    <div class="title">Foundations of Contact Improvisation</div>
+    <div class="subtitle">Weight sharing, momentum, and the physics of spontaneous movement. A research-backed introduction.</div>
+    <div class="brand">@seamless_research</div>
+    <div class="page-marker">1/7</div>
+  </div>
+  <div class="photo-panel"></div>
+</div>
+
+</body>
+</html>

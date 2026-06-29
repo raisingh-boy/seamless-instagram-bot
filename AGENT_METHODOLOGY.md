@@ -28,7 +28,6 @@
 - `plan` — план действий
 - `implementation` — реализация
 
-Все пишутся через write_through.py в PostgreSQL (outreach.agent_events)
 
 ## Инструменты
 - Carousel generators → Pillow (не playwright)

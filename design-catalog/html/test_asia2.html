@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;500;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px; height: 1350px;
+  background: #fafaf7;
+  overflow: hidden; position: relative;
+}
+
+/* ===== ASIAN ARCHITECTURE #2: CONCRETE + VOID ===== */
+
+/* Photo strip left */
+.photo-strip {
+  position: absolute;
+  left: 0; top: 0;
+  width: 35%; height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(1.1) brightness(0.95);
+  z-index: 0;
+}
+
+/* Concrete texture right panel */
+.concrete-panel {
+  position: absolute;
+  right: 0; top: 0;
+  width: 65%; height: 100%;
+  background: linear-gradient(180deg, #ede8e1 0%, #e8e3dc 40%, #e3ded7 100%);
+  z-index: 0;
+}
+
+/* Content */
+.content-concrete {
+  position: relative; z-index: 1;
+  height: 100%; padding: 100px 80px 100px 430px;
+  display: flex; flex-direction: column;
+  justify-content: center;
+}
+
+/* Three text directions */
+.dir-top-h {
+  position: absolute;
+  top: 60px; left: 430px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 12px; font-weight: 400;
+  letter-spacing: 8px; color: #b5a99a;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.dir-right-v {
+  position: absolute;
+  right: 30px; top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 11px; font-weight: 300;
+  color: rgba(0,0,0,0.1);
+  writing-mode: vertical-rl; letter-spacing: 4px;
+  z-index: 0;
+}
+
+.dir-bottom-r {
+  position: absolute;
+  bottom: 60px; left: 350px;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 10px; font-weight: 300;
+  letter-spacing: 5px; color: rgba(0,0,0,0.12);
+  transform: rotate(-90deg);
+  transform-origin: left bottom;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+/* Korean typography */
+.kr-headline {
+  font-family: 'Noto Serif KR', serif;
+  font-size: 64px; font-weight: 700;
+  line-height: 1.1; color: #2c2c2c;
+}
+
+.kr-subtitle {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 16px; font-weight: 300;
+  color: #aaa; letter-spacing: 3px;
+  margin: 20px 0 30px;
+}
+
+.divider-kr {
+  width: 50px; height: 2px;
+  background: #2c2c2c; margin-bottom: 24px;
+}
+
+.body-kr {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 15px; font-weight: 300;
+  line-height: 2.2; color: #999;
+  max-width: 380px;
+}
+
+/* Chinese character watermark */
+.cn-watermark {
+  position: absolute;
+  bottom: 100px; right: 80px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 200px; font-weight: 900;
+  color: rgba(0,0,0,0.025);
+  line-height: 1;
+  z-index: 0;
+}
+
+.page-kr {
+  position: absolute;
+  bottom: 50px; right: 80px;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 24px; color: #ccc;
+  z-index: 2;
+}
+
+.brand-kr {
+  position: absolute;
+  top: 60px; right: 80px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 11px; letter-spacing: 4px;
+  color: #ccc;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<img class="photo-strip" src="file:///tmp/seamless_photo2.jpg" alt="">
+<div class="concrete-panel"></div>
+
+<div class="cn-watermark">身</div>
+
+<div class="dir-top-h">SEAMLESS · RESEARCH LAB · BALI</div>
+<div class="dir-right-v">身体の知恵 · 動きの科学 · 重力の哲学 · 接触即興</div>
+<div class="dir-bottom-r">PHOTOGRAPHY: ANDREY BEREZKIN · 2026 · MOVEMENT STUDIES</div>
+
+<div class="brand-kr">@SEAMLESS_RESEARCH</div>
+<div class="page-kr">04</div>
+
+<div class="content-concrete">
+  <div class="kr-headline">
+    몸의<br>
+    지혜
+  </div>
+  <div class="kr-subtitle">THE WISDOM OF THE BODY</div>
+  <div class="divider-kr"></div>
+  <div class="body-kr">
+    신체는 생각보다 먼저 반응한다。움직임은 가장 오래된 언어이며,
+    중력은 최초의 스승이다。몸은 이론이 아닌 실천을 통해 배운다。
+  </div>
+</div>
+
+</body>
+</html>

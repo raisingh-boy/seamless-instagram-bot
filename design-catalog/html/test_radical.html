@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@300;400;700;900&family=Switzer:wght@300;400;600;800&family=Geist+Mono:wght@400;500;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px; height: 1350px;
+  background: #f0ece5;
+  overflow: hidden; position: relative;
+}
+
+/* ===== RADICAL: TEXT IN ALL DIRECTIONS AROUND PHOTO ===== */
+
+/* Photo - angular crop */
+.photo-angular {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotate(-8deg);
+  width: 380px; height: 500px;
+  object-fit: cover;
+  filter: contrast(1.1) brightness(0.95) saturate(0.7);
+  z-index: 3;
+  box-shadow: 30px 30px 0 rgba(0,0,0,0.05);
+}
+
+/* Text radiating in all directions */
+
+/* TOP: horizontal headline */
+.dir-top-headline {
+  position: absolute;
+  top: 60px; left: 80px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 52px; font-weight: 700;
+  line-height: 1.1; color: #2c2c2c;
+  z-index: 2; letter-spacing: -1px;
+}
+
+/* RIGHT: vertical Korean */
+.dir-right-kr {
+  position: absolute;
+  right: 35px; top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Noto Serif KR', serif;
+  font-size: 14px; font-weight: 300;
+  color: rgba(0,0,0,0.15);
+  writing-mode: vertical-rl;
+  letter-spacing: 3px;
+  z-index: 1;
+}
+
+/* BOTTOM: horizontal right-aligned */
+.dir-bottom-info {
+  position: absolute;
+  bottom: 60px; right: 80px;
+  font-family: 'Switzer', sans-serif;
+  font-size: 15px; font-weight: 300;
+  color: #999; text-align: right;
+  line-height: 1.7; max-width: 300px;
+  z-index: 2;
+}
+
+/* LEFT: rotated 90° */
+.dir-left-rotated {
+  position: absolute;
+  left: 10px; top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px; font-weight: 400;
+  letter-spacing: 6px;
+  color: rgba(0,0,0,0.1);
+  white-space: nowrap;
+  z-index: 0;
+  text-transform: uppercase;
+}
+
+/* DIAGONAL: top-right to bottom-left */
+.dir-diagonal {
+  position: absolute;
+  top: 45%; right: 5%;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 16px; font-weight: 300;
+  color: rgba(0,0,0,0.08);
+  transform: rotate(-35deg);
+  z-index: 0;
+}
+
+/* DIAGONAL: bottom-left to top-right */
+.dir-diagonal-2 {
+  position: absolute;
+  bottom: 40%; left: 3%;
+  font-family: 'Geist Mono', monospace;
+  font-size: 11px; letter-spacing: 4px;
+  color: rgba(0,0,0,0.08);
+  transform: rotate(28deg);
+  z-index: 0;
+  text-transform: uppercase;
+}
+
+/* Giant CJK watermark */
+.giant-jp {
+  position: absolute;
+  top: 150px; right: 30px;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 300px; font-weight: 900;
+  color: rgba(0,0,0,0.025);
+  line-height: 1; z-index: 0;
+}
+
+/* Label above photo */
+.label-above {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -290px);
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px; letter-spacing: 4px;
+  color: #bbb; text-transform: uppercase;
+  z-index: 4;
+}
+
+/* Label below photo */
+.label-below {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, 280px);
+  font-family: 'Geist Mono', monospace;
+  font-size: 10px; letter-spacing: 4px;
+  color: #bbb; text-transform: uppercase;
+  z-index: 4;
+}
+
+/* Korean accent character */
+.kr-char {
+  position: absolute;
+  top: 80px; right: 120px;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 120px; font-weight: 900;
+  color: rgba(0,0,0,0.03); z-index: 0;
+}
+
+.page-num-small {
+  position: absolute;
+  bottom: 40px; left: 80px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 14px; color: #ccc; z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<div class="giant-jp">움</div>
+<div class="kr-char">몸</div>
+
+<div class="dir-diagonal">SEAMLESS · MOVEMENT LAB · BALI</div>
+<div class="dir-diagonal-2">EMBODIED · SOMATIC · CONTACT</div>
+
+<div class="dir-left-rotated">PHOTOGRAPHY: ANDREY BEREZKIN · 2026 · MOVEMENT RESEARCH · BALI</div>
+<div class="dir-right-kr">신체는 생각 이전에 반응하며 움직임은 가장 오래된 언어이다</div>
+
+<img class="photo-angular" src="file:///tmp/seamless_photo2.jpg" alt="">
+
+<div class="label-above">RESEARCH</div>
+<div class="label-below">MOVEMENT</div>
+
+<div class="dir-top-headline">
+  gravity<br>
+  as language
+</div>
+
+<div class="dir-bottom-info">
+  The body negotiates weight, momentum, 
+  and ground through an ongoing dialogue 
+  that began before humans had words 
+  for such things.
+</div>
+
+<div class="page-num-small">05/07</div>
+
+</body>
+</html>

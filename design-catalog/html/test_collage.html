@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #fffbf5;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== COLLAGE / MIXED MEDIA ===== */
+
+/* Torn paper / organic shapes */
+.organic-shape-1 {
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  width: 500px;
+  height: 500px;
+  background: #ff6b35;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.organic-shape-2 {
+  position: absolute;
+  bottom: -80px;
+  left: -20px;
+  width: 450px;
+  height: 450px;
+  background: #004e89;
+  border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+/* Photo fragment */
+.photo-fragment {
+  position: absolute;
+  top: 300px;
+  left: 80px;
+  width: 340px;
+  height: 430px;
+  object-fit: cover;
+  z-index: 1;
+  border-radius: 2px;
+  box-shadow: 20px 20px 0 rgba(0,0,0,0.06);
+}
+
+/* Bold serif headline on right */
+.headline-right {
+  position: absolute;
+  top: 260px;
+  right: 80px;
+  z-index: 2;
+  text-align: right;
+  max-width: 450px;
+}
+
+.headline-right .serif-headline {
+  font-family: 'DM Serif Display', serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1.0;
+  color: #111;
+}
+
+.headline-right .grotesk-sub {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6b35;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+/* Bottom bar */
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  z-index: 2;
+}
+
+.bottom-bar .bar-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 2px;
+}
+
+/* Crypto/tech style label */
+.tech-badge {
+  position: absolute;
+  top: 70px;
+  left: 80px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #004e89;
+  border: 1px solid #004e89;
+  padding: 8px 16px;
+  z-index: 2;
+}
+
+/* Scattered dots */
+.dot-cluster {
+  position: absolute;
+  top: 180px;
+  right: 100px;
+  display: flex;
+  gap: 12px;
+  z-index: 0;
+}
+
+.dot-cluster .d {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #004e89;
+}
+</style>
+</head>
+<body>
+
+<div class="organic-shape-1"></div>
+<div class="organic-shape-2"></div>
+
+<div class="dot-cluster">
+  <div class="d"></div><div class="d"></div><div class="d"></div>
+  <div class="d"></div><div class="d"></div><div class="d"></div>
+</div>
+
+<img class="photo-fragment" src="file:///tmp/seamless_photo2.jpg" alt="">
+
+<div class="tech-badge">RESEARCH LAB</div>
+
+<div class="headline-right">
+  <div class="serif-headline">
+    The<br>
+    physics<br>
+    of touch
+  </div>
+  <div class="grotesk-sub">
+    Contact Improvisation Studies
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <div class="bar-text">SEAMLESS · MOVEMENT RESEARCH</div>
+  <div class="bar-text">2026</div>
+  <div class="bar-text">@SEAMLESS_RESEARCH</div>
+</div>
+
+</body>
+</html>

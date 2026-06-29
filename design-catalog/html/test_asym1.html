@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&family=Noto+Serif+JP:wght@300;400;600;900&family=Geist+Mono:wght@400;500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1350px;background:#f7f4ef;overflow:hidden;position:relative}
+
+/* PHOTO - top right, not centered */
+.photo-tr{position:absolute;top:80px;right:80px;width:420px;height:520px;object-fit:cover;filter:brightness(0.95)contrast(1.05)saturate(0.75);z-index:1}
+
+/* HEADLINE - left side, below midline, asymmetric */
+.headline-area{position:absolute;left:80px;top:50%;transform:translateY(-30%);z-index:2}
+.headline-jp{font-family:'Zen Kaku Gothic New',sans-serif;font-size:68px;font-weight:700;line-height:1.05;color:#1a1a1a;letter-spacing:-2px}
+.headline-jp .thin{font-weight:300;font-size:48px}
+
+/* VERTICAL JAPANESE - far left edge */
+.vert-left{position:absolute;left:30px;top:20%;bottom:20%;font-family:'Noto Serif JP',serif;font-size:13px;font-weight:300;color:rgba(0,0,0,0.1);writing-mode:vertical-rl;letter-spacing:3px;z-index:0}
+
+/* SMALL LABEL - top left */
+.label-tl{position:absolute;top:80px;left:80px;font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:5px;color:#bbb;z-index:2}
+
+/* BODY - below photo, right-aligned */
+.body-tr{position:absolute;bottom:140px;right:80px;font-family:'Zen Kaku Gothic New',sans-serif;font-size:14px;font-weight:300;line-height:1.9;color:#999;text-align:right;max-width:300px;z-index:2}
+
+/* ROTATED tiny credit */
+.credit-rot{position:absolute;bottom:60px;left:0;font-family:'Geist Mono',monospace;font-size:9px;letter-spacing:4px;color:rgba(0,0,0,0.08);transform:rotate(-90deg);transform-origin:left bottom;white-space:nowrap;z-index:0}
+
+/* Asymmetric accent line */
+.accent-a{position:absolute;left:80px;top:55%;width:80px;height:1px;background:#b5a595;z-index:2}
+
+/* Page number - random placement */
+.page-num-a{position:absolute;top:80px;right:520px;font-family:'Geist Mono',monospace;font-size:14px;color:#ccc;z-index:2}
+
+/* Watermark character - off-center */
+.watermark-off{position:absolute;bottom:60px;right:200px;font-family:'Noto Serif JP',serif;font-size:240px;font-weight:900;color:rgba(0,0,0,0.018);line-height:1;z-index:0}
+</style></head><body>
+
+<div class="watermark-off">身</div>
+<div class="vert-left">身体の叡智は動きの中に宿り言葉より先に重力と対話する</div>
+<div class="credit-rot">PHOTO: ANDREY BEREZKIN · BALI · 2026 · SEAMLESS RESEARCH</div>
+
+<img class="photo-tr" src="file:///tmp/seamless_photo2.jpg" alt="">
+
+<div class="label-tl">SEAMLESS · 2026</div>
+<div class="page-num-a">02</div>
+
+<div class="headline-area">
+  <div class="accent-a"></div>
+  <div class="headline-jp">
+    動きの<br>
+    <span class="thin">哲学</span>
+  </div>
+</div>
+
+<div class="body-tr">
+  Movement is not merely physical — it is philosophical. 
+  Every gesture is an argument about gravity, space, 
+  and the relationship between bodies.
+</div>
+
+</body></html>

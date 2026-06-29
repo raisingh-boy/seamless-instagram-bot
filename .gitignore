@@ -1,6 +1,11 @@
-.openclaw/
 .env
-*.session
-__pycache__/
 *.pyc
-.remembra.json
+__pycache__/
+.tox/
+*.egg-info/
+.meta-tokens.json
+.gh_token
+.julius_key
+photo_tracker.json
+run_log.jsonl
+photos/*.jpg

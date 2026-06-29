@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satoshi:wght@300;400;500;700;900&family=General+Sans:wght@400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #f9f8f6;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== VAR 22: DRIBBBLE SLEEK MODERN ===== */
+
+/* Gradient accent bar */
+.gradient-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #a855f7, #d946ef);
+  z-index: 2;
+}
+
+/* Content grid */
+.content-grid {
+  height: 100%;
+  padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Three-tier typography hierarchy (from getdraft.io) */
+/* Tier 1: eyebrow/overline */
+.tier-1 {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  color: #6366f1;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+/* Tier 2: headline */
+.tier-2 {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 88px;
+  font-weight: 900;
+  line-height: 0.95;
+  color: #18181b;
+  letter-spacing: -2px;
+  max-width: 750px;
+  margin-bottom: 30px;
+}
+
+.tier-2 .accent {
+  color: #6366f1;
+}
+
+/* Tier 3: body/description */
+.tier-3 {
+  font-family: 'General Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #71717a;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+/* Stats row */
+.stats-row {
+  display: flex;
+  gap: 60px;
+}
+
+.stat .num {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #18181b;
+  line-height: 1;
+}
+
+.stat .lbl {
+  font-family: 'General Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #a1a1aa;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+/* Abstract shape */
+.abstract-shape {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 500px;
+  background: linear-gradient(135deg, #6366f1 0%, #d946ef 100%);
+  border-radius: 40% 60% 70% 30% / 40% 50% 40% 60%;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.abstract-shape-2 {
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 360px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
+  opacity: 0.06;
+  z-index: 0;
+}
+
+/* Photo badge */
+.photo-badge-dribbble {
+  position: absolute;
+  right: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px;
+  z-index: 1;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+}
+
+/* Bottom bar */
+.bottom-tag {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #d4d4d8;
+  letter-spacing: 2px;
+}
+
+.page-tag {
+  position: absolute;
+  bottom: 60px;
+  right: 80px;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #a1a1aa;
+}
+</style>
+</head>
+<body>
+
+<div class="gradient-bar"></div>
+<div class="abstract-shape"></div>
+<div class="abstract-shape-2"></div>
+
+<img class="photo-badge-dribbble" src="file:///tmp/seamless_photo1.jpg" alt="">
+
+<div class="content-grid">
+  <div class="tier-1">Movement Research</div>
+  <div class="tier-2">
+    The body<br>
+    <span class="accent">knows</span> first.
+  </div>
+  <div class="tier-3">
+    Proprioception is not a sense — it is intelligence 
+    embedded in every muscle fiber, every joint capsule, 
+    every breath.
+  </div>
+  
+  <div class="stats-row">
+    <div class="stat">
+      <div class="num">639</div>
+      <div class="lbl">MUSCLES IN THE HUMAN BODY</div>
+    </div>
+    <div class="stat">
+      <div class="num">360</div>
+      <div class="lbl">JOINTS IN MOTION</div>
+    </div>
+    <div class="stat">
+      <div class="num">86B</div>
+      <div class="lbl">NEURONS CONNECTED</div>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-tag">@SEAMLESS_RESEARCH</div>
+<div class="page-tag">03 / 07</div>
+
+</body>
+</html>

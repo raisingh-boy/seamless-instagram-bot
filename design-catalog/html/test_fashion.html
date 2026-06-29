@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,700;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,700&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px; height: 1350px;
+  background: #faf9f7;
+  overflow: hidden; position: relative;
+}
+
+/* ===== FASHION EDITORIAL ===== */
+
+.photo-fullbleed {
+  position: absolute;
+  right: 0; top: 0;
+  width: 52%; height: 100%;
+  object-fit: cover;
+  filter: brightness(0.95) contrast(1.05) saturate(0.85);
+  z-index: 0;
+}
+
+/* Subtle gradient on left */
+.left-gradient {
+  position: absolute;
+  left: 0; top: 0;
+  width: 48%; height: 100%;
+  background: linear-gradient(90deg, #faf9f7 60%, transparent 100%);
+  z-index: 0;
+}
+
+/* Content */
+.content-fashion {
+  position: relative; z-index: 1;
+  height: 100%; padding: 100px 80px;
+  display: flex; flex-direction: column;
+  justify-content: center;
+  max-width: 520px;
+}
+
+.bodoni-headline {
+  font-family: 'Bodoni Moda', serif;
+  font-size: 76px; font-weight: 400;
+  line-height: 0.98; color: #1a1a1a;
+}
+
+.bodoni-headline em {
+  font-style: italic; font-weight: 500;
+}
+
+.inter-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px; letter-spacing: 6px;
+  color: #999; text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.vertical-accent {
+  width: 1px; height: 60px;
+  background: #c4b5a5; margin: 30px 0;
+}
+
+.inter-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; font-weight: 300;
+  line-height: 1.8; color: #888;
+  max-width: 380px;
+}
+
+.page-tag {
+  position: absolute; bottom: 60px; left: 80px;
+  font-family: 'Bodoni Moda', serif;
+  font-size: 32px; color: #ddd;
+}
+
+.credit-v {
+  position: absolute; right: 30px; top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Inter', sans-serif;
+  font-size: 9px; letter-spacing: 5px;
+  color: rgba(0,0,0,0.15);
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+
+<img class="photo-fullbleed" src="file:///tmp/seamless_photo1.jpg" alt="">
+<div class="left-gradient"></div>
+
+<div class="credit-v">PHOTOGRAPHY · ANDREY BEREZKIN · BALI · 2026</div>
+
+<div class="content-fashion">
+  <div class="inter-label">SEAMLESS · Editorial</div>
+  <div class="bodoni-headline">
+    The art<br>
+    <em>of falling</em><br>
+    gracefully.
+  </div>
+  <div class="vertical-accent"></div>
+  <div class="inter-body">
+    In Contact Improvisation, the fall is not failure. 
+    It is surrender — a listening body yielding to gravity, 
+    trusting the ground and the partner to catch what the 
+    mind cannot control.
+  </div>
+</div>
+
+<div class="page-tag">SEAMLESS</div>
+
+</body>
+</html>

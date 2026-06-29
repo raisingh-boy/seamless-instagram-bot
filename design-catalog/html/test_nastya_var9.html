@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #fdfcf8;
+  color: #111;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===== #9: BAUHAUS GEOMETRIC ===== */
+
+/* Primary shapes */
+.bauhaus-circle {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #c23b22;
+  opacity: 0.85;
+  z-index: 0;
+}
+
+.bauhaus-triangle {
+  position: absolute;
+  bottom: 120px;
+  left: 40px;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 280px solid #1a3a5c;
+  opacity: 0.75;
+  z-index: 0;
+}
+
+.bauhaus-rect {
+  position: absolute;
+  top: 420px;
+  left: 80px;
+  width: 220px;
+  height: 90px;
+  background: #d4a017;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.bauhaus-line-h {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #111;
+  z-index: 0;
+}
+
+/* Typography zone */
+.typo-zone {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 100px;
+}
+
+.headline-bauhaus {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -2px;
+  color: #0d0d0d;
+  margin-bottom: 30px;
+  max-width: 650px;
+}
+
+.subhead-bauhaus {
+  font-family: 'Courier Prime', monospace;
+  font-size: 24px;
+  color: #555;
+  line-height: 1.5;
+  max-width: 450px;
+  font-style: italic;
+}
+
+.bottom-info {
+  position: absolute;
+  bottom: 60px;
+  left: 100px;
+  display: flex;
+  gap: 60px;
+  z-index: 2;
+}
+
+.info-block {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.info-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+.info-value {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.page-marker-bauhaus {
+  position: absolute;
+  bottom: 60px;
+  right: 100px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 48px;
+  font-weight: 300;
+  color: #ddd;
+  z-index: 2;
+}
+</style>
+</head>
+<body>
+
+<!-- Bauhaus geometric shapes -->
+<div class="bauhaus-circle"></div>
+<div class="bauhaus-triangle"></div>
+<div class="bauhaus-rect"></div>
+<div class="bauhaus-line-h"></div>
+
+<!-- Typography -->
+<div class="typo-zone">
+  <div class="headline-bauhaus">
+    Form<br>follows<br>function.<br>Body follows<br>gravity.
+  </div>
+  <div class="subhead-bauhaus">
+    Movement education through the lens of physics, 
+    neuroscience, and somatic practice.
+  </div>
+</div>
+
+<!-- Bottom info -->
+<div class="bottom-info">
+  <div class="info-block">
+    <div class="info-label">MOVEMENT</div>
+    <div class="info-value">Bauhaus Series</div>
+  </div>
+  <div class="info-block">
+    <div class="info-label">DATE</div>
+    <div class="info-value">2026</div>
+  </div>
+  <div class="info-block">
+    <div class="info-label">BRAND</div>
+    <div class="info-value">@seamless_research</div>
+  </div>
+</div>
+
+<div class="page-marker-bauhaus">02</div>
+
+</body>
+</html>
