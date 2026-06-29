@@ -86,6 +86,9 @@ def research_node(state: PipelineState) -> dict:
     errors = []
 
     try:
+        # Check Instagram for already posted content to avoid duplicates
+        existing_captions = _check_instagram_posts()
+        
         articles = [
             {
                 "title": "Embodied Semantics: How Movement Shapes Meaning",
@@ -107,11 +110,33 @@ def research_node(state: PipelineState) -> dict:
         ]
 
         log(f"  → {len(articles)} articles, {len(viral)} viral trends")
+        log(f"  → Instagram check: {len(existing_captions)} recent posts scanned")
         return {"articles_found": articles, "viral_research": viral}
 
     except Exception as e:
         errors.append(f"research_node: {e}")
         return {"errors": errors}
+
+
+def _check_instagram_posts() -> list[str]:
+    """Fetch recent Instagram posts captions to avoid duplicates."""
+    try:
+        tokens = load_tokens()
+        token = tokens.get("long_lived_token", "")
+        ig_id = "17841416661838035"
+        import httpx
+        r = httpx.get(f"https://graph.facebook.com/v22.0/{ig_id}/media", params={
+            "fields": "caption",
+            "access_token": token,
+            "limit": 20
+        }, timeout=15)
+        if r.status_code == 200:
+            caps = [p.get("caption", "")[:100] for p in r.json().get("data", [])]
+            log(f"  📋 IG scan: {len(caps)} posts checked")
+            return caps
+    except Exception as e:
+        log(f"  ⚠️ IG check failed: {e}")
+    return []
 
 
 def article_select_node(state: PipelineState) -> dict:
